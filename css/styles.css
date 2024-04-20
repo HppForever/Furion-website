@@ -1,0 +1,53 @@
+@import url('accordion.css');
+@import url('carousel.css');
+@import url('card.css');
+@import url('btn.css');
+
+body {
+    background-color: #333;
+    color: #fff;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.sparkle {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    animation: sparkle 0.3s ease forwards;
+    pointer-events: none;
+}
+
+@keyframes sparkle {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+.navbar-nav 
+{ 
+    margin-left: auto; 
+}
+
+.nav-link:hover {
+    background-color: rgba(172, 172, 172, 0.192);
+}
+
+:focus {
+    outline: 0 !important;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+}
