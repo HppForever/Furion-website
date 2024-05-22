@@ -108,27 +108,39 @@
         <div class="accordion-body"> 
             <b>Let's start with a preface: there is no ban that can't be bypassed.</b><br><br>
             Ban type, difficulty, and circumvention:<br><br>
-            <h2><b>1. Ban on steam id + ip (fresh_ban) (easy)</b></h2><br>
+            <h2><b>1. Ban on steam id + IP (fresh_ban) (easy)</b></h2><br>
             <b>Steam id</b> - is a player ID, which is usually used to store data (level, rating, privileges, etc)<br><br>
-            To change the steam id, enable the function <b>Steam id spoofer</b> in any cheat or protector, such as a protector <b>Xguard</b> it can be enabled with the command <b>xg_emu_set random</b> or <b>xg_emu_set "id"</b> (to save data)<br><br>
+            To change the <b>steam id</b>, enable the function <b>Steam id spoofer</b> in any cheat or protector, such as a protector <b>Xguard</b> it can be enabled with the command <b>xg_emu_set random</b> or <b>xg_emu_set "id"</b> (to save data)<br><br>
             <img src="../img/articles/set_random_steamid.png"></img><br><br>
-            To change the ip address, enable <b>VPN</b> (if you have a static ip) or reboot the router by unplugging it for a while (if you have a dynamic ip)<br>You can find out what type of ip you have by following the link - <a href ="https://www.bolshoyvopros.ru/questions/416583-kak-uznat-javljaetsja-li-ip-adres-plavajuschim-ili-postojannym.html" target="_blank">Recognize ip type</a><br><br>
-            After changing steam id and ip - there will be no ban.<br><br>
-            <h2><b>2. Ban by steam id + ip + tags in config.cfg (dopban) (easy)</b></h2><br>
-            <b>Dopban</b> - is a plugin (paid) that intercepts fresh_ban and writes you in config.cfg a label (random characters) in cvars/keys/bindings before the ban using the client_cmd function (sends you a command to the console via the svc_stufftext package) and checks your config.cfg for labels when you rejoin the server..<br>
-            If the tag is there, you won't be able to log in even if you changed your steam id and ip.<br><br>
-            To prevent dopban from tagging in config.cfg, you must enable svc_stufftext packet blocking, usually this feature is enabled by default in protectors.<br><br>
+            To change the <b>IP</b> address, enable <b>VPN</b> (if you have a static <b>IP</b>) or reboot the router by unplugging it for a while (if you have a dynamic <b>IP</b>)<br>You can find out what type of <b>IP</b> you have by following the link - <a href ="https://www.bolshoyvopros.ru/questions/416583-kak-uznat-javljaetsja-li-IP-adres-plavajuschim-ili-postojannym.html" target="_blank">Recognize IP type</a><br><br>
+            After changing <b>steam id</b> and <b>IP</b> - there will be no ban.<br><br>
+            <h2><b>2. Ban on steam id + IP + tags in config.cfg (dopban) (easy)</b></h2><br>
+            <b>Dopban</b> - is a plugin (paid) that intercepts <b>fresh_ban</b> and writes you in <b>config.cfg</b> a label (random characters) in cvars/keys/bindings before the ban using the <b>client_cmd</b> function (sends you a command to the console via the <b>svc_stufftext</b> package) and checks your <b>config.cfg</b> for labels when you rejoin the server..<br>
+            If the tag is there, you won't be able to log in even if you changed your <b>steam id</b> and <b>IP</b>.<br><br>
+            To prevent dopban from tagging in <b>config.cfg</b>, you must enable <b>svc_stufftext</b> packet blocking, usually this feature is enabled by default in protectors.<br><br>
             Install protector or enable this feature in furion, go to Settings -> Protector -> Protect cs config (if you have version 1.795 or higher) or Misc -> Protector -> Protect cs config (if you have version lower than 1.795)<br><br>
-            Once you enable svc_stufftext packet blocking - dopban will become helpless garbage, you will only have to change your steam id and ip (see the first point)<br><br>
-            I would also like to add that using the client_cmd function that the dopban plugin uses, you can break config.cfg or clog up your disk with screenshots, so be sure to enable the svc_stufftext packet blocking feature :)<br><br>
-            <h2><b>3. Subnet ban (medium)</b></h2><br>
+            Once you enable <b>svc_stufftext</b> packet blocking - <b>dopban</b> will become helpless garbage, you will only have to change your <b>steam id</b> and <b>IP</b> (see the first point)<br><br>
+            I would also like to add that using the <b>client_cmd</b> function that the <b>dopban</b> plugin uses, you can break <b>config.cfg</b> or clog up your disk with screenshots, so be sure to enable the <b>svc_stufftext</b> packet blocking feature :)<br><br>
+            <h2><b>3. Ban on cookie (dopban) (easy)</b></h2><br>
+            What is <b>DopBan</b> and what he can do with <b>CS</b> - we partially discussed in the previous paragraph, but these are not all the features of this plugin.<br><br>
+            It has a function for cookie bans, but it is often not enabled by the scoofs (server creators) (don't know how to)<br><br>
+            <b>Cookies</b> – are small text files that are saved on a user's computer or device when visiting a website/server.<br><br>
+            Now you know what cookies are and that they can be sent to your browsers when you access the server, specifically through the <b>MOTD</b> window.<br><br>
+            In order to <b>DopBan</b> Couldn't shove a cookie in your browser - turn it on <b>MOTD</b> block function in cheat (if you are using Furion - this function is located in the tab Misc->Misc->Motd block)<br><br>
+            If, however, you've changed <b>IP</b> и <b>steam id</b> (first point), cleaned the config from tags or you had the block function enabled <b>svc_stufftext</b> package (protector) (second point), changed your nickname (at the end of the article you can read why you should do it) and the ban still remains - it means you have a cookie ban.<br><br>
+            In order to bypass the cookie ban - download the program <b>BleachBit</b> (<a href ="https://www.bleachbit.org/download/windows" target="_blank">download</a>)<br>
+            Run it and uncheck all the checkboxes except for <b>Cookies</b> in all browser tabs.<br><br>
+            You can see on the screenshot how to tick the checkboxes, after ticking the checkboxes - click the button <b>Cleansing</b>.<br><br>
+            <img src="../img/articles/proper checkmarking.png"></img><br><br>
+            This point concludes.<br><br>
+            <h2><b>4. Subnet ban (medium)</b></h2><br>
             <b>Subnet</b> - network part.<br>
-            Example: 77.73.69.0/24 is a subnet with IP addresses 77.73.69.1 through 77.73.69.254.<br><br>
-            If the subnet 77.73.69.0 (where 0 is the already banned part) is banned, you will not be able to play with IP addresses whose subnet is "77.73.69".<br>
-            That is, you can't play with IP addresses 77.73.69.15, 77.73.69.37, 77.73.69.125, and so on, because they all have the same subnetwork.<br><br>
+            Example: 77.73.69.0/24 is a subnet with <b>IP</b> addresses 77.73.69.1 through 77.73.69.254.<br><br>
+            If the subnet 77.73.69.0 (where 0 is the already banned part) is banned, you will not be able to play with <b>IP</b> addresses whose subnet is "77.73.69".<br>
+            That is, you can't play with <b>IP</b> addresses 77.73.69.15, 77.73.69.37, 77.73.69.125, and so on, because they all have the same subnetwork.<br><br>
             How do I know if a subnet has been blocked? - When you connect to the server, you will have no downloads, as if you have no internet connection.<br>
-            How to bypass the blockage? - Reconnect to the VPN until it gives you a new subnet, or change region/country.<br><br>
-            Don't forget to do the first and second item (if dopban is installed on the server)<br><br>
+            How to bypass the blockage? - Reconnect to the <b>VPN</b> until it gives you a new subnet, or change region/country.<br><br>
+            Don't forget to do the first and second item (if <b>dopban</b> is installed on the server)<br><br>
             <h2><b>More info</b></h2><br>
             There are still a couple more ban types (two left) and they're hard to get around already.<br>
             I'd tell you what types they are, but I can't, since server creators will run to put them on their servers, you don't want that, I guess)<br><br>
