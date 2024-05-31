@@ -3,9 +3,39 @@
 @import url('card.css');
 @import url('btn.css');
 
+header {
+    height: 4em;
+}
+
 body {
-    background-color: #333;
     color: #fff;
+    background: linear-gradient(to right, #3d3d3d, #2c2c2c, #212121);
+    background-size: 400% 400%;
+    animation: gradientBackground 10s ease infinite;
+}
+
+@keyframes gradientBackground {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+@keyframes shine-bg {
+    0% {
+        left: -100%;
+    }
+    50% {
+        left: 100%;
+    }
+    100% {
+        left: 100%;
+    }
 }
 
 @keyframes spin {
