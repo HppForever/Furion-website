@@ -11,7 +11,7 @@
 </head>
 <body>
     <header class="text-center" style="display: flex; justify-content: center; align-items: flex-start;">
-        <img src="../img/main_logo.png" alt="Main logo" style="height: 3.125em; margin-bottom: 0.625em;">
+      <img id="main-logo" style="height: 3.125em; margin-bottom: 0.625em; display: none;" src="../img/main_logo.png" alt="Main logo">
         <div style="position: absolute; top: 0em; right: 0em;">
         <a class="nav-link" href="#">🇷🇺</a>
         <a class="nav-link" href="../english_htmls/articles.html">🇺🇸</a>
@@ -151,6 +151,7 @@
 </div>
   <div id="sparkles"></div>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="../js/do_not_load_current_page.js"></script>
 <script src="../js/cursor_effect.js"></script>
@@ -168,5 +169,10 @@
         }
         event.target.classList.add('active');
     }
+</script>
+<script>
+  $(document).ready(function() {
+      $("#main-logo").fadeIn(1250);
+  });
 </script>
 </html>
