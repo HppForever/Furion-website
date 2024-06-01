@@ -10,6 +10,12 @@
 <title>[Furion] покупка</title>
 </head>
 <body>
+<style>
+#Output 
+{
+    margin-right: auto; 
+}
+</style>
 <header class="text-center" style="display: flex; justify-content: center; align-items: flex-start;">
     <img id="main-logo" style="height: 3.125em; margin-bottom: 0.625em; display: none;" src="../img/main_logo.png" alt="Main logo">
     <div style="position: absolute; top: 0em; right: 0em;">
@@ -60,8 +66,50 @@
                     При покупке ваши данные не будут переданы третьим лицам, то есть создатель товара не сообщит кому-либо, что вы у него купили товар.<br><br>
                     Перед отправкой сообщения о приобретении товара не забудьте предоставить все необходимые данные сразу (если покупаете сборку сервера - IP сервера, если чит - HWID (hwid можно узнать с помощью Recipient hwid.exe который находится на странице "Скачать"))
                     </p>
-                    <a href="https://vk.com/im?media=&sel=661003834" class="btn btn-primary" target="_blank">Я проинформирован и готов к покупке</a>
+                    <a class="btn btn-primary" target="_blank">Я проинформирован и готов к покупке</a>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="PurchaseModal">
+    <div class="modal-dialog">
+        <div class="modal-content bg-dark">
+            <div class="modal-header">
+                <h5 class="modal-title">Введите данные для оформления заказа</h5>
+                <button type="button" class="btn-close bg-light" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body bg-dark">
+                <h5 class="text-info">Выберите товар из списка ниже:</h5>
+                <p>1 - Демо рекордер (999 руб, тип покупки: навсегда)</p>
+                <p>2 - Зомби сборка (600 руб, тип покупки: навсегда)</p>
+                <p>3 - Фурион подписка на месяц (150 руб)</p>
+                <p>4 - Фурион подписка на два месяца (225 руб)</p>
+                <p>5 - Rage hns cfg by hpp forever (200 руб, тип покупки: навсегда)</p>
+                <p>6 - Legit hns cfg by hpp forever (300 руб, тип покупки: навсегда)</p>
+                <input type="text" id="ProductSelection" class="form-control mb-3" placeholder="ID товара" maxlength="1">
+                <h5 class="text-info">Выберите тип оплаты из списка ниже:</h5>
+                <p>1 - Юмани кошелек</p>
+                <p>2 - Через карту на юмани кошелек продавца по номеру телефона</p>
+                <p class = "text-secondary">Перевод на хостинг (продавец может не всегда согласится)</p>
+                <p>3 - SberPay</p>
+                <p>4 - Карта СБП</p>
+                <p>5 - Карта Мир</p>
+                <p>6 - Карта Mastercard</p>
+                <p>7 - Карта Тинькофф</p>
+                <input type="text" id="PaymentSelection" class="form-control mb-3" placeholder="ID оплаты" maxlength="1">
+                <h5 class="text-info">Выберите социальную сеть для отправки сообщения о покупке продавцу:</h5>
+                <p>1 - Вконтакте</p>
+                <p>2 - Дискорд</p>
+                <p>3 - Телеграмм</p>
+                <input type="text" id="SocialNetwork_Selection" class="form-control mb-3" placeholder="ID соц-сети" maxlength="1">
+            </div>
+            <div class="modal-footer bg-dark">
+                <div id="Output"></div> 
+            </div>
+            <div class="modal-footer bg-dark">
+            <div id="CopyText_Buffer"></div>
+            <button type="button" class="btn btn-primary" style="display:block; margin: 0 auto;" id="ConfirmPurchase">Подтвердить покупку</button>
             </div>
         </div>
     </div>
@@ -71,9 +119,181 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="../js/do_not_load_current_page.js"></script>
 <script src="../js/cursor_effect.js"></script>
+
 <script>
     $(document).ready(function() {
         $("#main-logo").fadeIn(1250);
     });
+</script>
+
+<script>
+let ActionCompleted = false;
+
+$('#PurchaseModal').on('hidden.bs.modal', function ()  // Очищаем значения при закрытии модального окна
+{
+    $('#ProductSelection').val('');
+    $('#PaymentSelection').val('');
+    $('#SocialNetwork_Selection').val('');
+    $('#Output').html('');
+    ActionCompleted = false;
+});
+    
+$(window).on('beforeunload', function()  // Очищаем значения при перезагрузке страницы
+{
+        $('#ProductSelection').val('');
+        $('#PaymentSelection').val('');
+        $('#SocialNetwork_Selection').val('');
+        $('#Output').html('');
+        ActionCompleted = false;
+});
+
+$("#ProductSelection").on('input', function() 
+{
+    if(!(/^\d$/.test($(this).val())) || (parseInt($(this).val()) < 1 || parseInt($(this).val()) > 6))
+        $(this).val('');
+});
+
+$("#PaymentSelection").on('input', function() 
+{
+    if(!(/^\d$/.test($(this).val())) || (parseInt($(this).val()) < 1 || parseInt($(this).val()) > 7))
+        $(this).val('');
+});
+
+$("#SocialNetwork_Selection").on('input', function()
+{
+    if(!(/^\d$/.test($(this).val())) || (parseInt($(this).val()) < 1 || parseInt($(this).val()) > 3))
+        $(this).val('');
+});
+
+document.querySelector('.btn-primary').addEventListener('click', function() 
+{
+    $("#PurchaseModal").modal("show");
+
+    let Product_TextColor;
+    let Payment_TextColor;
+    let SocialNetwork_TextColor;
+    let SocialNetwork_Link;
+
+    function UpdateInfo() 
+    {
+        let ProductName, PaymentName, SocialNetwork_Name;
+
+        switch($("#ProductSelection").val())
+        {
+            case "1": ProductName = "Демо рекордер"; break;
+            case "2": ProductName = "Зомби сборка"; break;
+            case "3": ProductName = "Фурион подписка на месяц"; break;
+            case "4": ProductName = "Фурион подписка на два месяца"; break;
+            case "5": ProductName = "Rage hns cfg by hpp forever"; break;
+            case "6": ProductName = "Legit hns cfg by hpp forever"; break;
+            default: ProductName = ""; break;
+        }
+
+        switch($("#PaymentSelection").val())
+        {
+            case "1": PaymentName = "Юмани кошелек"; break;
+            case "2": PaymentName = "Через карту на юмани кошелек продавца по номеру телефона"; break;
+            case "3": PaymentName = "SberPay"; break;
+            case "4": PaymentName = "Карта СБП"; break;
+            case "5": PaymentName = "Карта Мир"; break;
+            case "6": PaymentName = "Карта Mastercard"; break;
+            case "7": PaymentName = "Карта Тинькофф"; break;
+            default: PaymentName = ""; break;
+        }
+
+        switch($("#SocialNetwork_Selection").val())
+        {
+            case "1":
+            {
+                SocialNetwork_Name = "Вконтакте"; 
+                SocialNetwork_Link = "https://vk.com/im?media=&sel=661003834";
+            }
+            break;
+
+            case "2":
+            {
+                SocialNetwork_Name = "Дискорд"; 
+                SocialNetwork_Link = "https://discord.com/users/793057204529922060";
+            } 
+            break;
+
+            case "3":
+            {
+                SocialNetwork_Name = "Телеграмм";
+                SocialNetwork_Link = "https://t.me/HWDLL_0x12043CC";
+            } 
+            break;
+
+            default: SocialNetwork_Name = ""; break;
+        }
+
+        Product_TextColor = $("#ProductSelection").val() === '' ? 'red' : 'green';
+        Payment_TextColor = $("#PaymentSelection").val() === '' ? 'red' : 'green';
+        SocialNetwork_TextColor = $("#SocialNetwork_Selection").val() === '' ? 'red' : 'green';
+
+        $("#Output").html(`<p style="color: ${Product_TextColor}">Товар: ${ProductName} (ID: ${$("#ProductSelection").val()})</p><p style="color: ${Payment_TextColor}">Способ оплаты: ${PaymentName} (ID: ${$("#PaymentSelection").val()})</p><p style="color: ${SocialNetwork_TextColor}">Социальная сеть: ${SocialNetwork_Name} (ID: ${$("#SocialNetwork_Selection").val()})</p>`);
+    }
+
+    UpdateInfo();
+
+    $("#ProductSelection").on('input', function() 
+    {
+        UpdateInfo();
+    });
+
+    $("#PaymentSelection").on('input', function() 
+    {
+        UpdateInfo();
+    });
+
+    $("#SocialNetwork_Selection").on('input', function() 
+    {
+        UpdateInfo();
+    });
+
+    document.getElementById("ConfirmPurchase").addEventListener('click', function() 
+    {
+        if (Product_TextColor == "green" && Payment_TextColor == "green" && SocialNetwork_TextColor == "green")
+        {
+            let BufferText = "Привет!\n\nХочу купить у тебя товар ";
+    
+            switch ($("#ProductSelection").val())
+            {
+                case "1": BufferText += "\"Демо рекордер\""; break;
+                case "2": BufferText += "\"Зомби сборка\""; break;
+                case "3": BufferText += "\"Фурион подписка на месяц\""; break;
+                case "4": BufferText += "\"Фурион подписка на два месяца\""; break;
+                case "5": BufferText += "\"Rage hns cfg by hpp forever\"";   break;
+                case "6": BufferText += "\"Legit hns cfg by hpp forever\"";  break;
+            }
+    
+            switch ($("#PaymentSelection").val()) 
+            {
+                case "1": BufferText += ", оплачивать буду через Юмани кошелек.\nСкинь номер кошелька"; break;
+                case "2": BufferText += ", оплачивать буду через карту на твой Юмани кошелек по номеру телефона.\nСкинь номер телефона"; break;
+                case "3": BufferText += ", оплачивать буду через твой хостинг (SberPay)\nСкинь ссылку"; break;
+                case "4": BufferText += ", оплачивать буду через твой хостинг (СБП)\nСкинь ссылку"; break;
+                case "5": BufferText += ", оплачивать буду через твой хостинг (Мир)\nСкинь ссылку"; break;
+                case "6": BufferText += ", оплачивать буду через твой хостинг (Mastercard)\nСкинь ссылку"; break;
+                case "7": BufferText += ", оплачивать буду через твой хостинг (Тинькофф)\nСкинь ссылку"; break;
+            }
+
+            navigator.clipboard.writeText(BufferText)
+            
+            .then(() => 
+            {
+                window.open(SocialNetwork_Link, "_blank");
+            });
+            
+            if (!ActionCompleted)
+                alert("Текст скопирован в буффер обмена, отправьте этот текст продавцу.\n\nПри закрытии этого окна - вас перекинет в личные сообщения с продавцом");
+
+            ActionCompleted = true;
+        }
+
+        else
+            alert("Вы ввели не все данные");
+    });
+});
 </script>
 </html>
