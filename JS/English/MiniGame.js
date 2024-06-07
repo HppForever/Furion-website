@@ -21,7 +21,7 @@ MiniGame_modal.innerHTML = `
     </div>
     <div>
         <button id="PlayButton" class="btn btn-primary" onclick="play()">Play</button>
-        <p style="text-align: center;">Control: <-, -> or A, D</p>
+        <p style="text-align: center;">Control: <-, -></p>
         <Canvas id="Canvas" width="350" height="200"></Canvas><br><br>
     </div>
 </div>
