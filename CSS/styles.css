@@ -1,0 +1,108 @@
+@import url('accordion.css');
+@import url('carousel.css');
+@import url('card.css');
+@import url('btn.css');
+@import url('mini_game.css');
+
+header
+{
+    height: 4em;
+}
+
+body 
+{
+    color: #fff;
+    background: linear-gradient(to right, #3d3d3d, #2c2c2c, #212121);
+    background-size: 400% 400%;
+    animation: gradientBackground 10s ease infinite;
+}
+
+@keyframes gradientBackground
+{
+    0% 
+    {
+      background-position: 0% 50%;
+    }
+
+    50% 
+    {
+      background-position: 100% 50%;
+    }
+
+    100% 
+    {
+      background-position: 0% 50%;
+    }
+}
+
+@keyframes shine-bg 
+{
+    0% 
+    {
+        left: -100%;
+    }
+
+    50% 
+    {
+        left: 100%;
+    }
+
+    100% 
+    {
+        left: 100%;
+    }
+}
+
+@keyframes spin
+ {
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100% 
+    {
+        transform: rotate(360deg);
+    }
+}
+
+.sparkle
+{
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    animation: sparkle 0.3s ease forwards;
+    pointer-events: none;
+}
+
+@keyframes sparkle
+{
+    from 
+    {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    to 
+    {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+.navbar-nav 
+{ 
+    margin-left: auto; 
+}
+
+.nav-link:hover
+{
+    background-color: rgba(172, 172, 172, 0.192);
+}
+
+:focus
+{
+    outline: 0 !important;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+}
