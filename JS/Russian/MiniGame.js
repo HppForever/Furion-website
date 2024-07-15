@@ -28,6 +28,20 @@ MiniGame_modal.innerHTML = `
 </div>
 `;
 
+const CloseButton = document.createElement('div');
+CloseButton.className = 'Close_Button';
+CloseButton.style.cssText = 'position: fixed; bottom: 2.725em; right: 0.375em; cursor: pointer;';
+CloseButton.innerHTML = `✖️`;
+
+CloseButton.addEventListener('click', function() 
+{
+  MiniGame_button.style.display = 'none';
+  CloseButton.style.display = 'none';
+});
+
+document.body.appendChild(MiniGame_button);
+document.body.appendChild(CloseButton);
+
 document.body.appendChild(MiniGame_button);
 document.body.appendChild(MiniGame_modal);
 

@@ -1,0 +1,15 @@
+a 
+{
+    color: rgb(150, 147, 147);
+}
+
+a:hover 
+{
+    color: red;
+}
+
+.allocation
+{
+    background-color: rgb(39, 39, 39);
+    
+}
