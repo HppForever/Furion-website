@@ -1,7 +1,7 @@
 # 👋 Welcome to our CS 1.6 Furion project!
 
 <p align="center">
-  <img src="Images/Furion logotype.jpg" alt="Logotype"/>
+  <img src="Images or videos/Logotype.jpg" alt="Logotype"/>
 </p>
 
 ## 📌 About
