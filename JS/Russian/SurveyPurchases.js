@@ -53,10 +53,8 @@ document.querySelector('.btn-primary').addEventListener('click', function()
         {
             case "1": ProductName = "Демо рекордер"; break;
             case "2": ProductName = "Зомби сборка"; break;
-            case "3": ProductName = "Фурион подписка на месяц"; break;
-            case "4": ProductName = "Фурион подписка на два месяца"; break;
-            case "5": ProductName = "Rage hns cfg by hpp forever"; break;
-            case "6": ProductName = "Legit hns cfg by hpp forever"; break;
+            case "3": ProductName = "Rage hns cfg by hpp forever"; break;
+            case "4": ProductName = "Legit hns cfg by hpp forever"; break;
             default: ProductName = ""; break;
         }
 
@@ -132,10 +130,8 @@ document.querySelector('.btn-primary').addEventListener('click', function()
             {
                 case "1": BufferText += "\"Демо рекордер\""; break;
                 case "2": BufferText += "\"Зомби сборка\""; break;
-                case "3": BufferText += "\"Фурион подписка на месяц\""; break;
-                case "4": BufferText += "\"Фурион подписка на два месяца\""; break;
-                case "5": BufferText += "\"Rage hns cfg by hpp forever\"";   break;
-                case "6": BufferText += "\"Legit hns cfg by hpp forever\"";  break;
+                case "3": BufferText += "\"Rage hns cfg by hpp forever\"";   break;
+                case "4": BufferText += "\"Legit hns cfg by hpp forever\"";  break;
             }
     
             switch ($("#PaymentSelection").val()) 
