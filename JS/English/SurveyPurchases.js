@@ -53,10 +53,8 @@ document.querySelector('.btn-primary').addEventListener('click', function()
         {
             case "1": ProductName = "Demo recorder"; break;
             case "2": ProductName = "Zombie build"; break;
-            case "3": ProductName = "Furion hack monthly subscription"; break;
-            case "4": ProductName = "Furion hack for two months subscription"; break;
-            case "5": ProductName = "Rage hns cfg by hpp forever"; break;
-            case "6": ProductName = "Legit hns cfg by hpp forever"; break;
+            case "3": ProductName = "Rage hns cfg by hpp forever"; break;
+            case "4": ProductName = "Legit hns cfg by hpp forever"; break;
             default: ProductName = ""; break;
         }
 
@@ -132,10 +130,8 @@ document.querySelector('.btn-primary').addEventListener('click', function()
             {
                 case "1": BufferText += "\"Demo recorder\""; break;
                 case "2": BufferText += "\"Zombie build\""; break;
-                case "3": BufferText += "\"Furion hack monthly subscription\""; break;
-                case "4": BufferText += "\"Furion hack for two months subscription\""; break;
-                case "5": BufferText += "\"Rage hns cfg by hpp forever\"";   break;
-                case "6": BufferText += "\"Legit hns cfg by hpp forever\"";  break;
+                case "3": BufferText += "\"Rage hns cfg by hpp forever\"";   break;
+                case "4": BufferText += "\"Legit hns cfg by hpp forever\"";  break;
             }
     
             switch ($("#PaymentSelection").val()) 
