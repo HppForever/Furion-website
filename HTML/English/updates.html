@@ -67,6 +67,42 @@
 <div class="accordion bg-dark" id="Accordion" style ="margin-top: 0.625em;">
   <div class="accordion-item">
     <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Release_11" aria-expanded="false" aria-controls="Release_11">
+        1️⃣1️⃣ Eleventh Release (version 1.812) <br>🕒 Release Date: 01.09.2024
+      </button>
+    </h2>
+    <div id="Release_11" class="accordion-collapse collapse" data-bs-parent="#Accordion">
+      <div class="accordion-body">
+        - Added automatic deletion of the "htmlcache" folder upon cheat injection (the folder exists only in Steam builds and may contain ban markers)<br><br>
+        - Added detection of client protectors such as "XGuard" and "ExtraMirror" during cheat injection and output of warnings in the console about possible conflicts<br>For example, if a fake console command fps_max is sent through the sandbox in the client protector and the cheat’s sandbox also sends a fake console command — a conflict occurs. The same goes for blocking server commands (svc_stufftext), etc.<br><br>
+        - Output of players' setinfo when pressing the button "Output players' setinfo to console (by mark lotven)" is now color-coded<br><br>
+        - Added the ability to overlay colors on the chams and glow for dead enemies and yourself (for example, living player - green, dead - black)<br><br>
+        - Added icons and the ability to change their color (ordinary, hovered, true), and of course, rainbow mode is present<br><br>
+        - Added a "Main" sub-tab in the "Movement" tab, containing sub-tabs for: "Bhop", "Groundstrafe", "Bugs", "Strafes"<br><br>
+        - Added a "SteamID spoofer" sub-tab in the "Misc" tab<br><br>
+        - Added a "Main" sub-tab in the "Visuals" tab, containing sub-tabs for: "Esp", "Chams", "Glow", "Effects"<br><br>
+        - The "Local" sub-tab in the "Visuals" tab has been split into several sub-tabs: "Main", "Chams", "Glow", "Other"<br><br>
+        - The "Knifebot" sub-tab in the "Misc" tab has been split into several sub-tabs: "Main", "Helpers", "Checks"<br><br>
+        - The "Miscellaneous" sub-tab has been renamed to "Fake latency"<br><br>
+        - Fixed the auto-save feature for sub-tabs (for example, "Visuals->Main->Chams", etc.)<br><br>
+        - Now, if the "Activate" checkbox for a tab is inactive, all text in the tab will be colored "Text disabled"<br><br>
+        - Added an "Activate" checkbox for the "Misc" and "Console" tabs; when disabled, no function will work<br><br>
+        - Removed the slider "How much FPS to use during stab" in the "Knifebot" tab<br><br>
+        - Removed the "Other" sub-tab in the "Rage bot" tab, as it was empty<br><br>
+        - Added radio (beta) and 62 stations to it, in the "Sounds" sub-tab of the "Misc" tab<br><br>
+        - Added a "Kill sound" in the "Sounds" sub-tab of the "Misc" tab<br><br>
+        - Added a "Refresh models" button in "Visuals->Changers->Model changer" (for optimization)<br><br>
+        - Fixed the hands rendering when the "Freelook" function was enabled, and that the camera would not fly out of the player if the active checkbox had no button binding<br><br>
+        - Fixed the rage aim not targeting the nearest player<br><br>
+        - Fixed FPS dropping when displaying sky textures in the "Visuals->Changers->Sky changer" tab (thanks to Garey for the caching idea), also removed the checkbox for displaying sky textures; they will now always be displayed<br><br>
+        - Rewrote the system for setting any visual elements on the screen from screen resolution to percentage of resolution (now if you set 50% on both x and y in your configuration and give it to a friend with a different monitor - it will still display in the middle)<br><br>
+        - Added "Watermark" in "Visuals->Hud info->Watermark"<br><br>
+        - Improved the work of the "Fix auto movement" function located in "Visuals->Menu", which now resets presses excellently.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Release_10" aria-expanded="false" aria-controls="Release_10">
         🔟 Ninth Release (version 1.795 Reload) <br>🕒 Release Date: 13.08.2024
       </button>
@@ -413,6 +449,18 @@
 </div>
 </div>
 <div class="accordion" id="SiteUpdate" style ="margin-top: 0.625em;">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ReleaseSite_17" aria-expanded="false" aria-controls="ReleaseSite_17">
+        1️⃣7️⃣ Update <br>🕒 Release Date: 01.09.2024
+      </button>
+    </h2>
+    <div id="ReleaseSite_17" class="accordion-collapse collapse" data-bs-parent="#Accordion">
+      <div class="accordion-body">
+        - "Furion Hack v1.812" available for download
+      </div>
+    </div>
+  </div>
   <div class="accordion-item">
     <h2 class="accordion-header">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ReleaseSite_16" aria-expanded="false" aria-controls="ReleaseSite_16">
