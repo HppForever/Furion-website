@@ -1,0 +1,71 @@
+@import url('main.css');
+@import url('fonts.css');
+/*@import url('feedback.css');*/
+/*@import url('checkbox.css');*/
+@import url('accordion.css');
+@import url('carousel.css');
+@import url('card.css');
+@import url('btn.css');
+@import url('a_link.css');
+@import url('sparkle.css');
+/*@import url('footer.css');*/
+@import url('navbar.css');
+@import url('mini_game.css');
+@import url('container_black.css');
+@import url('nav_link.css');
+@import url('video.css');
+@import url('downloading_modal.css');
+
+@keyframes gradientBackground
+{
+    0% 
+    {
+      background-position: 0% 50%;
+    }
+
+    50% 
+    {
+      background-position: 100% 50%;
+    }
+
+    100% 
+    {
+      background-position: 0% 50%;
+    }
+}
+
+@keyframes shine-bg 
+{
+    0% 
+    {
+        left: -100%;
+    }
+
+    50% 
+    {
+        left: 100%;
+    }
+
+    100% 
+    {
+        left: 100%;
+    }
+}
+
+@keyframes spin
+ {
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100% 
+    {
+        transform: rotate(360deg);
+    }
+}
+
+:focus
+{
+    outline: 0 !important;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+}

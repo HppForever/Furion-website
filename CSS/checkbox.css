@@ -1,0 +1,26 @@
+.form-check 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-check-label
+{
+    margin-right: 2em;
+}
+
+.form-check-input 
+{
+    border-color: rgb(0, 0, 0);
+}
+
+.form-check-input:checked 
+{
+    border-color: rgb(0, 0, 0);
+}
+
+.form-check-input:not(:checked)
+{
+    border-color: rgb(0, 0, 0);
+}

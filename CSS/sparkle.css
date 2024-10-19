@@ -1,0 +1,25 @@
+.sparkle
+{
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    animation: sparkle 0.3s ease forwards;
+    pointer-events: none;
+}
+
+@keyframes sparkle
+{
+    from 
+    {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    to 
+    {
+        transform: scale(2);
+        opacity: 0;
+    }
+}

@@ -1,0 +1,62 @@
+/* Основные стили кнопки аккордеона */
+.accordion-button {
+    background-color: #222; /* Цвет фона кнопки */
+    border: none; /* Убираем border */
+    border-radius: 8px; /* Сглаживаем углы */
+    padding: 15px 25px; /* Добавляем отступы */
+    font-weight: bold; /* Увеличиваем жирность текста */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Плавный переход */
+}
+
+/* Цвет текста в свернутом состоянии */
+.accordion-button.collapsed {
+    color: #ffffff; 
+}
+
+/* Цвет фона заголовков */
+.accordion-header {
+    background-color: #ffffff; 
+    border-radius: 8px; /* Сглаживаем углы заголовка */
+}
+
+/* Цвет фона тела аккордеона */
+.accordion-body {
+    background-color: #141414; 
+    color: #fff; 
+    padding: 20px; /* Добавляем отступы для содержимого */
+    border-radius: 0 0 8px 8px; /* Сглаживаем углы тела */
+}
+
+/* Изменение цвета кнопки при нажатии */
+.accordion-button:active {
+    background-color: #7a7a7a; 
+    color: #fff; 
+    transform: scale(0.95); /* Легкий эффект нажатия */
+}
+
+/* Цвет фона кнопки в развернутом состоянии */
+.accordion-button:not(.collapsed) {
+    background-color: #333; 
+    color: #fff; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Добавляем тень */
+}
+
+/* Эффект при наведении на кнопку */
+.accordion-button:hover {
+    background-color: #444; /* Немного светлее при наведении */
+    transform: translateY(-2px); /* Поднимаем кнопку при наведении */
+}
+
+/* Иконка стрелки */
+.accordion-button:after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+    content: "";
+    float: right; /* Выравнивание иконки вправо */
+    margin-left: 10px; /* Отступ между текстом и иконкой */
+    transition: transform 0.3s ease; /* Плавный переход иконки */
+}
+
+/* Поворачиваем иконку при открытом аккордеоне */
+.accordion-button:not(.collapsed):after {
+    transform: rotate(180deg); /* Поворачиваем на 180 градусов при раскрывании */
+}

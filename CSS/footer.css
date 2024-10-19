@@ -1,0 +1,8 @@
+footer 
+{
+    height: 2.0em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+}

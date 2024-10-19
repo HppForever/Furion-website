@@ -1,0 +1,11 @@
+@font-face 
+{
+    font-family: 'Logotype';
+    src: url('../Res/Fonts/Logotype.ttf') format('truetype');
+}
+
+.LogotypeFont
+{
+    font-family: 'Logotype', Arial, sans-serif;
+    font-size: 3.5em;
+}

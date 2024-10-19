@@ -1,0 +1,11 @@
+.form-check-input 
+{
+    background-color: rgb(32, 32, 32);
+    border-color: rgb(85, 84, 84)
+}
+
+.form-check-input:checked 
+{
+    background-color: rgb(32, 32, 32);
+    border-color: rgb(255, 255, 255);
+}
