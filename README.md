@@ -1,35 +1,108 @@
-# 👋 Welcome to our CS 1.6 Furion project!
+
+<div align="center">
+  
+# 🎮 CS 1.6 FURION
+
+[![Discord](https://img.shields.io/badge/Discord-Join%20Us-7289DA?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg)
+[![Download](https://img.shields.io/badge/Download-Latest-brightgreen?style=for-the-badge)](https://download-link)
+[![Version](https://img.shields.io/badge/Version-2.0-blue?style=for-the-badge)](https://version-link)
 
 <p align="center">
-  <img src="Images or videos/Logotype.png" alt="Logotype"/>
+  <img src="Images or videos/Logotype.png" alt="Furion Logo" width="600px"/>
 </p>
 
-## 📌 About
-Our cheat project is dedicated to providing cheats for the popular game CS 1.6. The first release of our cheat was on 31.05.2023. Our cheat has localization for two main languages (Russian and English) and has a variety of useful features. We plan to further improve our cheat's functionality in the future!
+### 🚀 Превосходство в каждом выстреле | Excellence in Every Shot
+</div>
 
-## 👨🏼‍💻 Features
-- 🎯 Aimbot
-- 🎯 Triggerbot
-- 👁️ Visuals (esp, chams, texture changer, sky changer, etc)
-- 🐇 Movement (top 1)
-- 🔄 SteamID spoofer
-- 🗡️ Knifebot
-- 📩 Chat/cmd spammers
-- And more!
+---
 
-## ✍🏻 Future Plans
-In the future, we plan to enhance our cheat's functionality by:
-- Adding more customizable features
-- Enhancing the security of the cheat
-- New bypasses
+<div align="center">
 
-## 🤔 Usage
-To use our cheat just download it from the site on the download page
-If you suddenly have problems with it - go to the article page read the fix article
-We hope you enjoy using our CS 1.6 Cheat!
+## ⚡ ПРЕИМУЩЕСТВА | ADVANTAGES
 
-## 👥 Authors/assistants
-- hpp forever (main coder)
-- mark lotven (second coder, working less)
+</div>
 
-Happy Cheating! 😉🎮
+### 🎯 Продвинутый Aim
+- Интеллектуальная система прицеливания
+- Настраиваемые хитбоксы
+- Плавное наведение с предсказанием движения
+- Multi-point сканирование
+
+### 👁️ Визуальные возможности
+- ESP с настройкой прозрачности и цвета
+- Chams с поддержкой кастомных материалов
+- Динамическое изменение текстур
+- Продвинутый скайбокс чейнджер
+
+### 🎨 Кастомизация
+- Уникальная система тем оформления
+- Настраиваемое меню
+- Более 50 параметров настройки
+- Возможность сохранения конфигураций
+
+### 🛡️ Безопасность
+- Обход античитов последнего поколения
+- Уникальная система маскировки
+- SteamID спуфер нового поколения
+- Автоматические обновления
+
+---
+
+<div align="center">
+
+## 💫 ФУНКЦИОНАЛ | FEATURES
+
+|🎯 Боевые|🎮 Игровые|🛡️ Защита|
+|:--------:|:--------:|:--------:|
+|Aimbot Pro|Bhop Elite|SMAC Bypass|
+|TriggerBot|Strafe Hack|VAC Bypass|
+|Knifebot|Auto Strafe|VAC Auth Bypass|
+|Recoil Control|Fast Run|Signature Bypass|
+
+</div>
+
+---
+
+<div align="center">
+
+## 🌟 ОБНОВЛЕНИЕ 2.0 | UPDATE 2.0
+
+</div>
+
+### ✨ Что нового | What's New
+- Полностью переработанный интерфейс
+- Улучшенная производительность
+- Новые функции для про-игроков
+- Расширенные настройки безопасности
+
+### 🎯 В разработке | Coming Soon
+- Интеграция с Discord
+- Система достижений
+- Облачное хранение настроек
+- Расширенная статистика
+
+---
+
+<div align="center">
+
+## 👥 КОМАНДА | TEAM
+
+</div>
+
+### 🔧 Разработчики | Developers
+- **hpp forever** - *Ведущий разработчик*
+- **mark lotven** - *Второй разработчик*
+
+---
+
+<div align="center">
+
+### 🌐 ПРИСОЕДИНЯЙТЕСЬ К НАМ | JOIN US
+
+[![Steam](https://img.shields.io/badge/Steam-000000?style=for-the-badge&logo=steam&logoColor=white)](https://steam-link)
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube-link)
+[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://telegram-link)
+
+**© 2024 FURION TEAM. ВСЕ ПРАВА ЗАЩИЩЕНЫ**
+
+</div>
