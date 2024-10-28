@@ -60,3 +60,199 @@
 .accordion-button:not(.collapsed):after {
     transform: rotate(180deg); /* Поворачиваем на 180 градусов при раскрывании */
 }
+
+/* Основные переменные */
+:root {
+    --badge-bg: #393b41;
+    --badge-text: #a0aec0;
+    --badge-border: rgba(255, 93, 93, 0.1);
+    --badge-shadow: rgba(0, 0, 0, 0.2);
+    --badge-glow: rgba(99, 179, 237, 0.5);
+    --badge-hover-bg: #3a4659;
+    --badge-gradient-1: #4299e1;
+    --badge-gradient-2: #667eea;
+  }
+  
+  /* Базовые стили с сохранением размеров */
+  .date-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    margin-left: 0.75rem;
+    vertical-align: middle;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    position: relative;
+    transition: all 0.2s ease;
+    
+    /* Улучшенный фон */
+    background-color: var(--badge-bg);
+    color: var(--badge-text);
+    border: 1px solid var(--badge-border);
+    box-shadow: 
+      0 2px 4px var(--badge-shadow),
+      inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  }
+  
+  /* Улучшенная иконка */
+  .date-badge::before {
+    content: "📅";
+    margin-right: 0.5rem;
+    transform-origin: center;
+    transition: transform 0.2s ease;
+    filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.2));
+  }
+  
+  /* Эффект при наведении */
+  .date-badge:hover {
+    background-color: var(--badge-hover-bg);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 
+      0 2px 6px rgba(0, 0, 0, 0.3),
+      inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    transform: translateY(-1px);
+  }
+  
+  .date-badge:hover::before {
+    transform: scale(1.1);
+  }
+  
+  /* Градиентный вариант */
+  .date-badge.gradient {
+    background: linear-gradient(
+      135deg,
+      var(--badge-gradient-1),
+      var(--badge-gradient-2)
+    );
+    color: white;
+    border: none;
+  }
+  
+  /* Стеклянный эффект */
+  .date-badge.glass {
+    background: rgba(45, 55, 72, 0.8);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Неоморфический стиль */
+  .date-badge.neumorphic {
+    background: var(--badge-bg);
+    box-shadow: 
+      3px 3px 6px var(--badge-shadow),
+      -3px -3px 6px rgba(255, 255, 255, 0.05);
+    border: none;
+  }
+  
+  /* Металлический эффект */
+  .date-badge.metallic {
+    background: linear-gradient(
+      145deg,
+      #2d3748,
+      #3a4659
+    );
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 
+      inset 0 1px 0 rgba(255, 255, 255, 0.1),
+      0 1px 3px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Неоновый эффект */
+  .date-badge.neon {
+    background: var(--badge-bg);
+    box-shadow:
+      0 0 5px var(--badge-glow),
+      0 0 10px var(--badge-glow),
+      inset 0 0 2px var(--badge-glow);
+    border: 1px solid rgba(99, 179, 237, 0.3);
+    color: #63b3ed;
+  }
+  
+  /* Анимированный градиент */
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .date-badge.animated {
+    background: linear-gradient(
+      270deg,
+      var(--badge-gradient-1),
+      var(--badge-gradient-2),
+      var(--badge-gradient-1)
+    );
+    background-size: 200% 200%;
+    animation: gradientBG 3s ease infinite;
+    color: white;
+    border: none;
+  }
+  
+  .date-badge.pulse {
+    animation: pulse 2s infinite;
+  }
+  
+  /* Вариант с обводкой */
+  .date-badge.outlined {
+    background: transparent;
+    border: 1.5px solid var(--badge-text);
+    box-shadow: none;
+  }
+  
+  /* Темная тема */
+  @media (prefers-color-scheme: dark) {
+    .date-badge.adaptive {
+      --badge-bg: #1a202c;
+      --badge-hover-bg: #2d3748;
+      --badge-border: rgba(255, 255, 255, 0.05);
+    }
+  }
+  
+  /* Эффект при фокусе */
+  .date-badge:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--badge-glow);
+  }
+  
+  /* Эффект при активном состоянии */
+  .date-badge:active {
+    transform: translateY(0);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Состояние загрузки */
+  @keyframes shimmer {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+  
+  .date-badge.loading {
+    background: linear-gradient(
+      90deg,
+      var(--badge-bg) 0%,
+      var(--badge-hover-bg) 50%,
+      var(--badge-bg) 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    cursor: wait;
+  }
+  
+  /* Улучшенная читаемость */
+  .date-badge {
+    letter-spacing: 0.01em;
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }  
+
+.question-text {
+    flex: 1;
+    min-width: 200px;
+}
