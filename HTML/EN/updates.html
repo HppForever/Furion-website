@@ -68,6 +68,33 @@
 <div class="accordion bg-dark" id="Accordion" style ="margin-top: 0.625em;">
   <div class="accordion-item">
     <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Release_12" aria-expanded="false" aria-controls="Release_12">
+        <span class="question-text">1️⃣2️⃣ Twelfth Release (version 1.876)</span>
+        <span class="date-badge neumorphic">02.11.2024</span>
+      </button>
+    </h2>
+    <div id="Release_12" class="accordion-collapse collapse" data-bs-parent="#Accordion">
+      <div class="accordion-body">
+      - The cheat folder is now called "Furion Hack", and many other subfolders have been renamed, so everything looks cleaner now. The old cheat folder is not deleted (for using versions below 1.876), and configs, fonts, scripts are automatically transferred from the old cheat folder to the new one (except textures)<br><br>
+      - Instead of deleting the cfg folder - it will now be moved to the recycle bin<br><br>
+      - Removed automatic knifebot activation when enabling the "Goto" function<br><br>
+      - Fixed that "Wall" and "Wall save" folders of the "Texture changer" function were not created automatically<br><br>
+      - Fixed that some dropdown lists (ImGui::Combo) were not translated when changing language<br><br>
+      - Fixed that it showed "Select" when selecting a tab in the "Protector" window (since there's already "Button true"), also fixed that the "Console logs" list body went beyond the window bounds, and slightly reduced the child bg height in the "Cvars sandbox" tab<br><br>
+      - Fixed crashes when entering the "Console" tab if there were no .ini files for spam (thanks to baber for the bug report)<br><br>
+      - Fixed that if client protector "XGuard" or "ExtraMirror" was injected, the console warning was displayed exclusively in Russian<br><br>
+      - Fixed that "Real angle" and "Visual angle" sliders in "Rage strafe" and "Strafe helper" functions were linked together<br><br>
+      - Fixed that HUD color change (hp, armor, etc) worked even if the main checkbox in "Visuals->Local" tab was disabled<br><br>
+      - Removed the alignment function in "Movement->Surf helper" as it's garbage, only auto-duck and speedhack remain<br><br>
+      - Added movement recorder by mark lotven and hpp forever<br><br>
+      - Added 3 GUI themes from baber and Russian translation of themes<br><br>
+      - Added new functions for bhop scroll helper, and fixed that it didn't work if two scroll emulation checkboxes weren't enabled (bhop and bhop sbj)<br><br>
+      - Added bypass for "Unreal Cheat Detector" plugin, you won't be kicked/banned for "GENERIC 1" or "GENERIC 2" anymore
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Release_11" aria-expanded="false" aria-controls="Release_11">
         <span class="question-text">1️⃣1️⃣ Eleventh Release (version 1.812)</span>
         <span class="date-badge neumorphic">01.09.2024</span>
@@ -463,16 +490,14 @@
 <div class="accordion" id="SiteUpdate" style ="margin-top: 0.625em;">
   <div class="accordion-item">
       <h2 class="accordion-header">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ReleaseSite_19" aria-expanded="false" aria-controls="ReleaseSite_19">
-          <span class="question-text">1️⃣9️⃣ Update</span>
-          <span class="date-badge neumorphic">28.10.2024</span>
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ReleaseSite_20" aria-expanded="false" aria-controls="ReleaseSite_20">
+          <span class="question-text">2️⃣0️⃣ Update</span>
+          <span class="date-badge neumorphic">02.11.2024</span>
         </button>
       </h2>
-      <div id="ReleaseSite_19" class="accordion-collapse collapse" data-bs-parent="#Accordion">
+      <div id="ReleaseSite_20" class="accordion-collapse collapse" data-bs-parent="#Accordion">
         <div class="accordion-body">
-          - Added “Answers to common questions” page to the navigation menu<br>
-          - Improved the appearance of accordions that contain the release date<br>
-          - Added a new paragraph to the first article on the “Articles” page, about possible 'problems' in the loader + the link to the cs lite build has been replaced with the build from neverok
+          - "Furion Hack v1.876" available for download
         </div>
       </div>
     </div>
