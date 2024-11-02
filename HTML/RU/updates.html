@@ -68,6 +68,33 @@
     <div class="accordion bg-dark" id="CheatAccordion2" style ="margin-top: 0.625em;">
       <div class="accordion-item">
         <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Release_12" aria-expanded="false" aria-controls="Release_12">
+            <span class="question-text">1️⃣2️⃣ Двенадцатый релиз (версия 1.876)</span>
+            <span class="date-badge neumorphic">02.11.2024</span>
+          </button>
+        </h2>
+        <div id="Release_12" class="accordion-collapse collapse" data-bs-parent="#Accordion">
+          <div class="accordion-body">
+            - Теперь папка чита называется "Furion Hack", и многие другие подпапки были переименованы, так что теперь все выглядит аккуратно. Старая папка чита не удаляется (для использования версий ниже 1.876), и происходит автоперенос конфигов, шрифтов, скриптов из старой папки чита в новую (кроме текстур)<br><br>
+            - Теперь вместо удаления папки кфг - она будет переноситься в корзину<br><br>
+            - Убрано автовключение кнайфбота при включении функции "Goto"<br><br>
+            - Пофиксено что папки "Wall" и "Wall save" функции "Texture changer" не создавались автоматически<br><br>
+            - Пофиксено что некоторые выпадающие списки (ImGui::Combo) не переводились при смене языка<br><br>
+            - Пофиксено что писало "Select" при выборе вкладки в окне "Протектор" (так как уже есть "Button true"), также пофиксено что тело списка "Логи в консоли", выходило за пределы окна, и также было немного уменьшена высота child bg в вкладке "Песочница кваров"<br><br>
+            - Пофиксено что крашило при заходе во вкладку "Console", если не было .ini файлов для спама (спасибо baber за баг репорт)<br><br>
+            - Пофиксено что если был заинжекчен клиентский протектор "XGuard" или "ExtraMirror", предупреждение в консоли выводилось исключительно на русском языке<br><br>
+            - Пофиксено что ползунки "Реальный угол" и "Визуальный угол" в функциях "Rage strafe" и "Strafe helper" были объединены между собой<br><br>
+            - Пофиксено что изменение цвета худа (hp, armor, etc) работало даже если выключить главный чекбокс в вкладке "Visuals->Local"<br><br>
+            - Удалена функция выравнивания в "Movement->Surf helper", так как она мусор, остались только авто-присяд и спидхак<br><br>
+            - Добавлен мувемент рекордер by mark lotven and hpp forever<br><br>
+            - Добавлены 3 GUI темы от baber и перевод тем на русский<br><br>
+            - Добавлены новые функции для бхоп скролл хелпера, и пофиксено, что он не работал, если не были включены два чекбокса скролл эмуляции (bhop и bhop sbj)<br><br>
+            - Добавлен обход плагина "Unreal Cheat Detector", больше вас не будет кикать/банить по причине "GENERIC 1" или "GENERIC 2"
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Release_11" aria-expanded="false" aria-controls="Release_11">
             <span class="question-text">1️⃣1️⃣ Одиннадцатый релиз (версия 1.812)</span>
             <span class="date-badge neumorphic">01.09.2024</span>
@@ -463,6 +490,19 @@
     </div>
   </div>
   <div class="accordion" id="SiteUpdate" style ="margin-top: 0.625em;">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ReleaseSite_20" aria-expanded="false" aria-controls="ReleaseSite_20">
+          <span class="question-text">2️⃣0️⃣ Обновление</span>
+          <span class="date-badge neumorphic">02.11.2024</span>
+        </button>
+      </h2>
+      <div id="ReleaseSite_20" class="accordion-collapse collapse" data-bs-parent="#Accordion">
+        <div class="accordion-body">
+          - "Furion Hack v1.876" доступен для скачивания
+        </div>
+      </div>
+    </div>
     <div class="accordion-item">
       <h2 class="accordion-header">
         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ReleaseSite_19" aria-expanded="false" aria-controls="ReleaseSite_19">
