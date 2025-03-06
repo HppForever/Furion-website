@@ -1,15 +1,80 @@
-a 
-{
-    color: rgb(150, 147, 147);
+a {
+    color: #4ecdc4;
+    text-decoration: none;
+    transition: all 0.3s ease;
 }
 
-a:hover 
-{
-    color: red;
+a:hover {
+    color: #1ad1ff;
+    text-decoration: none;
 }
 
-.allocation
-{
-    background-color: rgb(39, 39, 39);
-    
+.allocation {
+    background-color: #1a2639;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    border-left: 3px solid #4ecdc4;
+    color: #c8d8e4;
+}
+
+/* Стилизация для заголовков */
+h1, h2, h3, h4, h5, h6 {
+    color: #4ecdc4;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+/* Стилизация для параграфов */
+p {
+    color: #c8d8e4;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+/* Стилизация для списков */
+ul, ol {
+    color: #c8d8e4;
+    margin-bottom: 1.5rem;
+    padding-left: 2rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* Выделение текста */
+.highlight {
+    background: linear-gradient(120deg, rgba(78, 205, 196, 0.2) 0%, rgba(26, 209, 255, 0.2) 100%);
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+}
+
+/* Подчеркивание */
+.underline {
+    border-bottom: 2px solid #4ecdc4;
+    padding-bottom: 2px;
+}
+
+/* Цитата */
+blockquote {
+    border-left: 4px solid #4ecdc4;
+    padding-left: 1rem;
+    margin-left: 0;
+    color: #8fa3b7;
+    font-style: italic;
+}
+
+/* Код */
+code {
+    background-color: #1a2639;
+    color: #4ecdc4;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Жирный текст */
+strong, b {
+    color: #fff;
+    font-weight: 600;
 }

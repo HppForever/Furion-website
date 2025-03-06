@@ -1,23 +1,35 @@
 .btn-group {
-    border: 0.125em solid rgb(95, 95, 95);
+    border: 0.125em solid #2d3e50;
     border-radius: 0.625em;
     padding: 0.625em;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    background-color: #f5f5f5; /* Light background for elegance */
-    transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
-  }
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    background-color: #1a2639;
+    transition: all 0.3s ease;
+}
+
+.btn-group:hover {
+    box-shadow: 0 4px 15px rgba(78, 205, 196, 0.3);
+}
   
 .btn-primary {
-    background-color: #333;
-    border-color: #aaaaaa;
-    color: #fff; /* White text for contrast */
+    background-color: #4ecdc4;
+    border-color: #4ecdc4;
+    color: #1a2639;
     font-weight: bold;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); /* Subtle text shadow for added depth */
-    cursor: pointer; /* Indicate interactivity */
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 0.5em;
 }
   
 .btn-primary:hover {
-    background-color: #555; /* Slightly darker shade on hover */
-    border-color: #888; /* Slightly darker border on hover */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* More prominent shadow on hover */
+    background-color: #1ad1ff;
+    border-color: #1ad1ff;
+    box-shadow: 0 0 15px rgba(78, 205, 196, 0.5);
+    transform: translateY(-2px);
+}
+
+.btn-primary:active {
+    transform: translateY(1px);
+    box-shadow: 0 0 5px rgba(78, 205, 196, 0.5);
 }

@@ -28,9 +28,9 @@ body::before {
     height: 100%;
     background: 
         linear-gradient(45deg, 
-            rgba(20, 20, 20, 0.9) 0%,
-            rgba(30, 30, 30, 0.9) 50%,
-            rgba(40, 40, 40, 0.9) 100%
+            rgba(10, 17, 25, 0.95) 0%,
+            rgba(26, 38, 57, 0.95) 50%,
+            rgba(13, 22, 31, 0.95) 100%
         );
     z-index: -2;
 }
@@ -44,19 +44,20 @@ body::after {
     height: 200%;
     background: radial-gradient(
         circle at center,
-        transparent 0%,
-        rgba(15, 15, 15, 0.8) 100%
+        rgba(78, 205, 196, 0.05) 0%,
+        rgba(10, 17, 25, 0.8) 100%
     );
     transform: translate(-50%, -50%);
-    animation: wave 10s ease-in-out infinite;
+    animation: wave 15s ease-in-out infinite;
     z-index: -1;
 }
 
 body {
     position: relative;
-    background-color: #171717;
-    color: #fff;
+    background-color: #0a1119;
+    color: #c8d8e4;
     overflow-x: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Добавляем эффект зернистости */
@@ -70,5 +71,112 @@ body {
     animation: grain 8s steps(10) infinite;
     pointer-events: none;
     z-index: -1;
-    opacity: 0.15;
+    opacity: 0.2;
+}
+
+/* Добавляем стилизованные скроллбары */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0d161f;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2d3e50;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4ecdc4;
+}
+
+/* Выделение текста */
+::selection {
+    background: rgba(78, 205, 196, 0.3);
+    color: #fff;
+}
+
+/* Стили для основных заголовков */
+h1, h2, h3, h4, h5, h6 {
+    color: #4ecdc4;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/* Стилизация ссылок */
+a {
+    color: #4ecdc4;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #1ad1ff;
+    text-decoration: none;
+}
+
+/* Стилизация параграфов */
+p {
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    color: #c8d8e4;
+}
+
+/* Стили для кода и пре-форматированного текста */
+code, pre {
+    background-color: #1a2639;
+    color: #4ecdc4;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+pre {
+    padding: 1rem;
+    overflow-x: auto;
+    border-left: 3px solid #4ecdc4;
+}
+
+/* Стилизация списков */
+ul, ol {
+    margin-bottom: 1.5rem;
+    padding-left: 2rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* Стилизация цитат */
+blockquote {
+    border-left: 4px solid #4ecdc4;
+    padding-left: 1rem;
+    margin-left: 0;
+    color: #8fa3b7;
+    font-style: italic;
+}
+
+/* Добавляем подсветку для сильного выделения */
+strong, b {
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Стиль для контейнера */
+.container {
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Добавляем анимацию для появления контента */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }

@@ -1,258 +1,359 @@
 /* Основные стили кнопки аккордеона */
+.accordion,
+.accordion-item {
+    background-color: transparent !important;
+    border: none !important;
+    margin-bottom: 5px;
+}
+
 .accordion-button {
-    background-color: #222; /* Цвет фона кнопки */
-    border: none; /* Убираем border */
-    border-radius: 8px; /* Сглаживаем углы */
-    padding: 15px 25px; /* Добавляем отступы */
-    font-weight: bold; /* Увеличиваем жирность текста */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Плавный переход */
+    background-color: #1a2639 !important; /* Темно-синий фон */
+    border: none;
+    border-radius: 8px !important;
+    padding: 15px 25px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    color: #f0f6fc !important;
+    box-shadow: none !important;
 }
 
 /* Цвет текста в свернутом состоянии */
 .accordion-button.collapsed {
-    color: #ffffff; 
+    color: #c8d8e4 !important;
 }
 
 /* Цвет фона заголовков */
 .accordion-header {
-    background-color: #ffffff; 
-    border-radius: 8px; /* Сглаживаем углы заголовка */
+    background-color: transparent !important;
+    border-radius: 8px;
+    margin-bottom: 5px;
 }
 
 /* Цвет фона тела аккордеона */
 .accordion-body {
-    background-color: #141414; 
-    color: #fff; 
-    padding: 20px; /* Добавляем отступы для содержимого */
-    border-radius: 0 0 8px 8px; /* Сглаживаем углы тела */
+    background-color: #0d161f !important;
+    color: #c8d8e4 !important;
+    padding: 20px;
+    border-radius: 0 0 8px 8px;
+    border-left: 3px solid #4ecdc4;
 }
 
 /* Изменение цвета кнопки при нажатии */
 .accordion-button:active {
-    background-color: #7a7a7a; 
-    color: #fff; 
-    transform: scale(0.95); /* Легкий эффект нажатия */
+    background-color: #2d3e50 !important;
+    color: #fff !important;
+    transform: scale(0.98);
 }
 
 /* Цвет фона кнопки в развернутом состоянии */
 .accordion-button:not(.collapsed) {
-    background-color: #333; 
-    color: #fff; 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Добавляем тень */
+    background-color: #2d3e50 !important;
+    color: #4ecdc4 !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3) !important;
 }
 
 /* Эффект при наведении на кнопку */
 .accordion-button:hover {
-    background-color: #444; /* Немного светлее при наведении */
-    transform: translateY(-2px); /* Поднимаем кнопку при наведении */
+    background-color: #2d3e50 !important;
+    transform: translateY(-2px);
 }
 
 /* Иконка стрелки */
 .accordion-button:after {
-    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%234ecdc4'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
     content: "";
-    float: right; /* Выравнивание иконки вправо */
-    margin-left: 10px; /* Отступ между текстом и иконкой */
-    transition: transform 0.3s ease; /* Плавный переход иконки */
+    float: right;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
 }
 
 /* Поворачиваем иконку при открытом аккордеоне */
 .accordion-button:not(.collapsed):after {
-    transform: rotate(180deg); /* Поворачиваем на 180 градусов при раскрывании */
+    transform: rotate(180deg);
+}
+
+/* Устраняем любые возможные белые фоны */
+.accordion-collapse {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.accordion-item {
+    border-color: transparent !important;
+}
+
+/* Основные стили кнопки аккордеона */
+.accordion-button {
+  background-color: #1a2639; /* Темно-синий фон */
+  border: none;
+  border-radius: 8px;
+  padding: 15px 25px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  color: #000000;
+  box-shadow: none;
+}
+
+/* Цвет текста в свернутом состоянии */
+.accordion-button.collapsed {
+  color: #c8d8e4;
+}
+
+/* Цвет фона заголовков */
+.accordion-header {
+  background-color: #1a2639;
+  border-radius: 8px;
+  margin-bottom: 5px;
+}
+
+/* Цвет фона тела аккордеона */
+.accordion-body {
+  background-color: #0d161f;
+  color: #c8d8e4;
+  padding: 20px;
+  border-radius: 0 0 8px 8px;
+  border-left: 3px solid #4ecdc4;
+}
+
+/* Изменение цвета кнопки при нажатии */
+.accordion-button:active {
+  background-color: #2d3e50;
+  color: #fff;
+  transform: scale(0.98);
+}
+
+/* Цвет фона кнопки в развернутом состоянии */
+.accordion-button:not(.collapsed) {
+  background-color: #2d3e50;
+  color: #4ecdc4;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Эффект при наведении на кнопку */
+.accordion-button:hover {
+  background-color: #2d3e50;
+  transform: translateY(-2px);
+}
+
+/* Убираем белый фон (это то, что вызывало проблему) */
+.accordion-button:focus {
+  box-shadow: none;
+  background-color: #2d3e50;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%234ecdc4'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
+/* Иконка стрелки */
+.accordion-button::after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%234ecdc4'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+  content: "";
+  float: right;
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+/* Поворачиваем иконку при открытом аккордеоне */
+.accordion-button:not(.collapsed)::after {
+  transform: rotate(180deg);
 }
 
 /* Основные переменные */
 :root {
-    --badge-bg: #393b41;
-    --badge-text: #a0aec0;
-    --badge-border: rgba(255, 93, 93, 0.1);
-    --badge-shadow: rgba(0, 0, 0, 0.2);
-    --badge-glow: rgba(99, 179, 237, 0.5);
-    --badge-hover-bg: #3a4659;
-    --badge-gradient-1: #4299e1;
-    --badge-gradient-2: #667eea;
-  }
+  --badge-bg: #1a2639;
+  --badge-text: #4ecdc4;
+  --badge-border: rgba(78, 205, 196, 0.2);
+  --badge-shadow: rgba(0, 0, 0, 0.3);
+  --badge-glow: rgba(78, 205, 196, 0.5);
+  --badge-hover-bg: #2d3e50;
+  --badge-gradient-1: #4ecdc4;
+  --badge-gradient-2: #1ad1ff;
+}
+
+/* Базовые стили с сохранением размеров */
+.date-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  margin-left: 0.75rem;
+  vertical-align: middle;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  position: relative;
+  transition: all 0.2s ease;
   
-  /* Базовые стили с сохранением размеров */
-  .date-badge {
-    display: inline-flex;
-    align-items: center;
-    padding: 0.25rem 0.75rem;
-    border-radius: 9999px;
-    font-size: 0.875rem;
-    margin-left: 0.75rem;
-    vertical-align: middle;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    position: relative;
-    transition: all 0.2s ease;
-    
-    /* Улучшенный фон */
-    background-color: var(--badge-bg);
-    color: var(--badge-text);
-    border: 1px solid var(--badge-border);
-    box-shadow: 
-      0 2px 4px var(--badge-shadow),
-      inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  /* Улучшенный фон */
+  background-color: var(--badge-bg);
+  color: var(--badge-text);
+  border: 1px solid var(--badge-border);
+  box-shadow: 
+    0 2px 4px var(--badge-shadow),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+/* Улучшенная иконка */
+.date-badge::before {
+  content: "📅";
+  margin-right: 0.5rem;
+  transform-origin: center;
+  transition: transform 0.2s ease;
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.2));
+}
+
+/* Эффект при наведении */
+.date-badge:hover {
+  background-color: var(--badge-hover-bg);
+  border-color: var(--badge-text);
+  box-shadow: 
+    0 2px 6px var(--badge-shadow),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    0 0 5px var(--badge-glow);
+  transform: translateY(-1px);
+}
+
+.date-badge:hover::before {
+  transform: scale(1.1);
+}
+
+/* Градиентный вариант */
+.date-badge.gradient {
+  background: linear-gradient(
+    135deg,
+    var(--badge-gradient-1),
+    var(--badge-gradient-2)
+  );
+  color: #1a2639;
+  font-weight: bold;
+  border: none;
+}
+
+/* Стеклянный эффект */
+.date-badge.glass {
+  background: rgba(26, 38, 57, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(78, 205, 196, 0.2);
+}
+
+/* Неоморфический стиль */
+.date-badge.neumorphic {
+  background: var(--badge-bg);
+  box-shadow: 
+    3px 3px 6px var(--badge-shadow),
+    -3px -3px 6px rgba(78, 205, 196, 0.05);
+  border: none;
+}
+
+/* Металлический эффект */
+.date-badge.metallic {
+  background: linear-gradient(
+    145deg,
+    #1a2639,
+    #2d3e50
+  );
+  border: 1px solid rgba(78, 205, 196, 0.2);
+  box-shadow: 
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Неоновый эффект */
+.date-badge.neon {
+  background: var(--badge-bg);
+  box-shadow:
+    0 0 5px var(--badge-glow),
+    0 0 10px var(--badge-glow),
+    inset 0 0 2px var(--badge-glow);
+  border: 1px solid rgba(78, 205, 196, 0.3);
+  color: #4ecdc4;
+}
+
+/* Анимированный градиент */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.date-badge.animated {
+  background: linear-gradient(
+    270deg,
+    var(--badge-gradient-1),
+    var(--badge-gradient-2),
+    var(--badge-gradient-1)
+  );
+  background-size: 200% 200%;
+  animation: gradientBG 3s ease infinite;
+  color: #1a2639;
+  font-weight: bold;
+  border: none;
+}
+
+.date-badge.pulse {
+  animation: pulse 2s infinite;
+}
+
+/* Вариант с обводкой */
+.date-badge.outlined {
+  background: transparent;
+  border: 1.5px solid var(--badge-text);
+  box-shadow: none;
+}
+
+/* Темная тема */
+@media (prefers-color-scheme: dark) {
+  .date-badge.adaptive {
+      --badge-bg: #0d161f;
+      --badge-hover-bg: #1a2639;
+      --badge-border: rgba(78, 205, 196, 0.1);
   }
-  
-  /* Улучшенная иконка */
-  .date-badge::before {
-    content: "📅";
-    margin-right: 0.5rem;
-    transform-origin: center;
-    transition: transform 0.2s ease;
-    filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.2));
-  }
-  
-  /* Эффект при наведении */
-  .date-badge:hover {
-    background-color: var(--badge-hover-bg);
-    border-color: rgba(255, 255, 255, 0.2);
-    box-shadow: 
-      0 2px 6px rgba(0, 0, 0, 0.3),
-      inset 0 1px 0 rgba(255, 255, 255, 0.1);
-    transform: translateY(-1px);
-  }
-  
-  .date-badge:hover::before {
-    transform: scale(1.1);
-  }
-  
-  /* Градиентный вариант */
-  .date-badge.gradient {
-    background: linear-gradient(
-      135deg,
-      var(--badge-gradient-1),
-      var(--badge-gradient-2)
-    );
-    color: white;
-    border: none;
-  }
-  
-  /* Стеклянный эффект */
-  .date-badge.glass {
-    background: rgba(45, 55, 72, 0.8);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-  }
-  
-  /* Неоморфический стиль */
-  .date-badge.neumorphic {
-    background: var(--badge-bg);
-    box-shadow: 
-      3px 3px 6px var(--badge-shadow),
-      -3px -3px 6px rgba(255, 255, 255, 0.05);
-    border: none;
-  }
-  
-  /* Металлический эффект */
-  .date-badge.metallic {
-    background: linear-gradient(
-      145deg,
-      #2d3748,
-      #3a4659
-    );
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 
-      inset 0 1px 0 rgba(255, 255, 255, 0.1),
-      0 1px 3px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Неоновый эффект */
-  .date-badge.neon {
-    background: var(--badge-bg);
-    box-shadow:
-      0 0 5px var(--badge-glow),
-      0 0 10px var(--badge-glow),
-      inset 0 0 2px var(--badge-glow);
-    border: 1px solid rgba(99, 179, 237, 0.3);
-    color: #63b3ed;
-  }
-  
-  /* Анимированный градиент */
-  @keyframes gradientBG {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-  }
-  
-  .date-badge.animated {
-    background: linear-gradient(
-      270deg,
-      var(--badge-gradient-1),
-      var(--badge-gradient-2),
-      var(--badge-gradient-1)
-    );
-    background-size: 200% 200%;
-    animation: gradientBG 3s ease infinite;
-    color: white;
-    border: none;
-  }
-  
-  .date-badge.pulse {
-    animation: pulse 2s infinite;
-  }
-  
-  /* Вариант с обводкой */
-  .date-badge.outlined {
-    background: transparent;
-    border: 1.5px solid var(--badge-text);
-    box-shadow: none;
-  }
-  
-  /* Темная тема */
-  @media (prefers-color-scheme: dark) {
-    .date-badge.adaptive {
-      --badge-bg: #1a202c;
-      --badge-hover-bg: #2d3748;
-      --badge-border: rgba(255, 255, 255, 0.05);
-    }
-  }
-  
-  /* Эффект при фокусе */
-  .date-badge:focus {
-    outline: none;
-    box-shadow: 0 0 0 2px var(--badge-glow);
-  }
-  
-  /* Эффект при активном состоянии */
-  .date-badge:active {
-    transform: translateY(0);
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Состояние загрузки */
-  @keyframes shimmer {
-    0% {
+}
+
+/* Эффект при фокусе */
+.date-badge:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--badge-glow);
+}
+
+/* Эффект при активном состоянии */
+.date-badge:active {
+  transform: translateY(0);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Состояние загрузки */
+@keyframes shimmer {
+  0% {
       background-position: -200% 0;
-    }
-    100% {
+  }
+  100% {
       background-position: 200% 0;
-    }
   }
-  
-  .date-badge.loading {
-    background: linear-gradient(
-      90deg,
-      var(--badge-bg) 0%,
-      var(--badge-hover-bg) 50%,
-      var(--badge-bg) 100%
-    );
-    background-size: 200% 100%;
-    animation: shimmer 1.5s infinite;
-    cursor: wait;
-  }
-  
-  /* Улучшенная читаемость */
-  .date-badge {
-    letter-spacing: 0.01em;
-    font-weight: 500;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }  
+}
+
+.date-badge.loading {
+  background: linear-gradient(
+    90deg,
+    var(--badge-bg) 0%,
+    var(--badge-hover-bg) 50%,
+    var(--badge-bg) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  cursor: wait;
+}
+
+/* Улучшенная читаемость */
+.date-badge {
+  letter-spacing: 0.01em;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}  
 
 .question-text {
-    flex: 1;
-    min-width: 200px;
+  flex: 1;
+  min-width: 200px;
 }

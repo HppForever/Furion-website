@@ -6,7 +6,6 @@
 @import url('carousel.css');
 @import url('card.css');
 @import url('btn.css');
-@import url('a_link.css');
 @import url('sparkle.css');
 /*@import url('footer.css');*/
 @import url('navbar.css');
@@ -15,57 +14,122 @@
 @import url('nav_link.css');
 @import url('video.css');
 @import url('downloading_modal.css');
+@import url('text.css');
+@import url('radio_button.css');
 
-@keyframes gradientBackground
-{
-    0% 
-    {
-      background-position: 0% 50%;
+/* Обновленные анимации под новую цветовую схему */
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
     }
-
-    50% 
-    {
-      background-position: 100% 50%;
+    50% {
+        background-position: 100% 50%;
     }
-
-    100% 
-    {
-      background-position: 0% 50%;
+    100% {
+        background-position: 0% 50%;
     }
 }
 
-@keyframes shine-bg 
-{
-    0% 
-    {
+@keyframes shine-bg {
+    0% {
         left: -100%;
     }
-
-    50% 
-    {
+    50% {
         left: 100%;
     }
-
-    100% 
-    {
+    100% {
         left: 100%;
     }
 }
 
-@keyframes spin
- {
-    0%
-    {
+@keyframes spin {
+    0% {
         transform: rotate(0deg);
     }
-    100% 
-    {
+    100% {
         transform: rotate(360deg);
     }
 }
 
-:focus
-{
+/* Новые анимации для обновленного дизайна */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 5px rgba(78, 205, 196, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 15px rgba(78, 205, 196, 0.6);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(78, 205, 196, 0.3);
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px rgba(78, 205, 196, 0.3);
+    }
+    50% {
+        text-shadow: 0 0 15px rgba(78, 205, 196, 0.6), 0 0 30px rgba(26, 209, 255, 0.4);
+    }
+    100% {
+        text-shadow: 0 0 5px rgba(78, 205, 196, 0.3);
+    }
+}
+
+/* Устранение нежелательного outline при фокусе */
+:focus {
     outline: 0 !important;
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+}
+
+/* Стилизация выделения текста */
+::selection {
+    background: rgba(78, 205, 196, 0.3);
+    color: #ffffff;
+}
+
+/* Стили для улучшения читабельности */
+body {
+    font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Общие переменные цветовой схемы */
+:root {
+    --primary-color: #4ecdc4;
+    --secondary-color: #1ad1ff;
+    --dark-bg: #1a2639;
+    --darker-bg: #0d161f;
+    --light-text: #c8d8e4;
+    --muted-text: #8fa3b7;
+}
+
+/* Стили для кнопок с градиентом */
+.gradient-btn {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    color: var(--darker-bg);
+    border: none;
+    border-radius: 30px;
+    padding: 10px 25px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(78, 205, 196, 0.3);
+}
+
+.gradient-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(78, 205, 196, 0.5);
 }

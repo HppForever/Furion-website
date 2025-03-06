@@ -1,59 +1,87 @@
 .downloading-modal .modal-content {
-    background-color: #1a1a1a;
+    background-color: #1a2639;
     border-radius: 15px;
     overflow: hidden;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(78, 205, 196, 0.2);
 }
 
 .downloading-modal .modal-header,
 .downloading-modal .modal-footer {
-    background: linear-gradient(145deg, #1e1e1e, #2a2a2a);
+    background: linear-gradient(145deg, #1a2639, #2d3e50);
     border: none;
+    padding: 1.2rem 1.5rem;
 }
 
 .downloading-modal .modal-body {
-    background-color: #2a2a2a;
-    color: #fff;
+    background-color: #0d161f;
+    color: #c8d8e4;
+    padding: 1.5rem;
 }
 
 .downloading-modal .modal-title {
-    color: #ffd700;
+    color: #4ecdc4;
     font-weight: bold;
+    letter-spacing: 0.5px;
 }
 
 .downloading-modal .btn-primary {
-    background-color: #ffd700;
-    color: #1a1a1a;
+    background-color: #4ecdc4;
+    color: #1a2639;
     border: none;
+    padding: 0.5rem 1.5rem;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: all 0.3s ease;
 }
 
 .downloading-modal .btn-primary:hover {
-    background-color: #ffec80;
-    color: #1a1a1a;
+    background-color: #1ad1ff;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(78, 205, 196, 0.4);
 }
 
 .downloading-modal .btn-secondary {
-    background-color: #444;
-    border: none;
+    background-color: #2d3e50;
+    border: 1px solid rgba(78, 205, 196, 0.3);
+    color: #c8d8e4;
+    padding: 0.5rem 1.5rem;
+    border-radius: 30px;
+    transition: all 0.3s ease;
 }
 
 .downloading-modal .btn-secondary:hover {
-    background-color: #555;
+    background-color: #3a4f66;
+    color: #fff;
+    transform: translateY(-2px);
 }
 
 @keyframes glow {
     0% {
-        box-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+        box-shadow: 0 0 5px rgba(78, 205, 196, 0.3);
     }
     50% {
-        box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+        box-shadow: 0 0 20px rgba(78, 205, 196, 0.6);
     }
     100% {
-        box-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+        box-shadow: 0 0 5px rgba(78, 205, 196, 0.3);
     }
 }
 
 .downloading-modal .modal-content:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
     animation: glow 2s infinite;
+}
+
+.downloading-modal .close {
+    color: #4ecdc4;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.downloading-modal .close:hover {
+    color: #1ad1ff;
+    opacity: 1;
+    transform: rotate(90deg);
 }

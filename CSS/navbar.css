@@ -1,23 +1,24 @@
 .navbar {
-    background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 100%);
+    background: linear-gradient(135deg, #0d161f 0%, #1a2639 100%);
     padding: 15px 0;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(78, 205, 196, 0.1);
 }
 
 .navbar-brand {
     font-family: 'Playfair Display', serif;
     font-size: 28px;
-    color: #ffd700;
-    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+    color: #4ecdc4;
+    text-shadow: 0 0 10px rgba(78, 205, 196, 0.5);
     transition: all 0.3s ease;
 }
 
 .navbar-brand:hover {
-    color: #ffffff;
-    text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+    color: #1ad1ff;
+    text-shadow: 0 0 15px rgba(26, 209, 255, 0.8);
+    transform: translateY(-2px);
 }
 
 .navbar-nav {
@@ -35,18 +36,18 @@
 }
 
 .navbar-toggler-icon {
-    background-image: url("image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 215, 0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(78, 205, 196, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
 @media (max-width: 991px) {
     .navbar-nav {
-        background: rgba(28, 28, 28, 0.95);
+        background: rgba(13, 22, 31, 0.95);
         padding: 20px;
         border-radius: 10px;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
         backdrop-filter: blur(5px);
         -webkit-backdrop-filter: blur(5px);
-        border: 1px solid rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(78, 205, 196, 0.1);
     }
     
     .nav-item {

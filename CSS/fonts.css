@@ -1,11 +1,19 @@
-@font-face 
-{
+@font-face {
     font-family: 'Logotype';
     src: url('../Res/Fonts/Logotype.ttf') format('truetype');
+    font-display: swap;
 }
 
-.LogotypeFont
-{
+.LogotypeFont {
     font-family: 'Logotype', Arial, sans-serif;
     font-size: 3.5em;
+    color: #4ecdc4;
+    text-shadow: 0 0 15px rgba(78, 205, 196, 0.5);
+    transition: all 0.3s ease;
+}
+
+.LogotypeFont:hover {
+    color: #1ad1ff;
+    text-shadow: 0 0 20px rgba(26, 209, 255, 0.7);
+    transform: translateY(-2px);
 }

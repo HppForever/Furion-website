@@ -1,26 +1,39 @@
-.form-check 
-{
+.form-check {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 10px 0;
 }
 
-.form-check-label
-{
+.form-check-label {
     margin-right: 2em;
+    color: #c8d8e4;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.3s ease;
 }
 
-.form-check-input 
-{
-    border-color: rgb(0, 0, 0);
+.form-check-label:hover {
+    color: #4ecdc4;
 }
 
-.form-check-input:checked 
-{
-    border-color: rgb(0, 0, 0);
+.form-check-input {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #2d3e50;
+    border-radius: 3px;
+    background-color: #1a2639;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-.form-check-input:not(:checked)
-{
-    border-color: rgb(0, 0, 0);
+.form-check-input:checked {
+    background-color: #4ecdc4;
+    border-color: #4ecdc4;
+    box-shadow: 0 0 10px rgba(78, 205, 196, 0.5);
+}
+
+.form-check-input:not(:checked):hover {
+    border-color: #4ecdc4;
+    box-shadow: 0 0 5px rgba(78, 205, 196, 0.3);
 }
