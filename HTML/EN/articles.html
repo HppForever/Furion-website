@@ -316,21 +316,21 @@
           <source src="../../Res/Img or video/Articles/What are binds and aliases, how to create them, and a couple of useful examples/Fps bind.mp4" type="video/mp4">
         </video>
         Now we have the ability to dynamically enable and disable FPS boost in the game through our two binds, but it would be much more convenient to use just one button instead of two.<br><br>
-        We can achieve this using an alias, here is an example that will replace our two binds with one button, toggling FPS boost on press (hold)<br>
+        We can achieve this using an alias, here is an example that will replace our two binds with one button, toggling FPS boost on press (toggle)<br>
         <div class="allocation">
           <code style="font-size: 0.8em">
-              alias Cvar_FpsBoost_Hold "BoostOn"<br>
-              alias BoostOn "hud_draw 0; cl_weather 0; cl_himodels 0; r_detailtextures 0; r_drawentities 0; gl_texturemode GL_NEAREST_MIPMAP_NEAREST; spk activated; alias Cvar_FpsBoost_Hold BoostOff"<br>
-              alias BoostOff "hud_draw 1; cl_weather 1; cl_himodels 1; r_detailtextures 1; r_drawentities 1; gl_texturemode GL_LINEAR_MIPMAP_LINEAR; spk deactivated; alias Cvar_FpsBoost_Hold BoostOn"<br>
-              bind "key" "Cvar_FpsBoost_Hold"
+              alias Cvar_FpsBoost_Toggle "BoostOn"<br>
+              alias BoostOn "hud_draw 0; cl_weather 0; cl_himodels 0; r_detailtextures 0; r_drawentities 0; gl_texturemode GL_NEAREST_MIPMAP_NEAREST; spk activated; alias Cvar_FpsBoost_Toggle BoostOff"<br>
+              alias BoostOff "hud_draw 1; cl_weather 1; cl_himodels 1; r_detailtextures 1; r_drawentities 1; gl_texturemode GL_LINEAR_MIPMAP_LINEAR; spk deactivated; alias Cvar_FpsBoost_Toggle BoostOn"<br>
+              bind "key" "Cvar_FpsBoost_Toggle"
           </code>
       </div>
-      <br>Here's the same alias, but it works through holding down the button (toggle)
+      <br>Here's the same alias, but it works through holding down the button (hold)
       <div class="allocation">
         <code style="font-size: 0.8em">
-          alias +Cvar_FpsBoost_Toggle "hud_draw 0; cl_weather 0; cl_himodels 0; r_detailtextures 0; r_drawentities 0; gl_texturemode GL_NEAREST_MIPMAP_NEAREST; spk activated"<br>
-          alias -Cvar_FpsBoost_Toggle "hud_draw 1; cl_weather 1; cl_himodels 1; r_detailtextures 1; r_drawentities 1; gl_texturemode GL_LINEAR_MIPMAP_LINEAR; spk deactivated"<br>
-          bind "key" "+Cvar_FpsBoost_Toggle"
+          alias +Cvar_FpsBoost_Hold "hud_draw 0; cl_weather 0; cl_himodels 0; r_detailtextures 0; r_drawentities 0; gl_texturemode GL_NEAREST_MIPMAP_NEAREST; spk activated"<br>
+          alias -Cvar_FpsBoost_Hold "hud_draw 1; cl_weather 1; cl_himodels 1; r_detailtextures 1; r_drawentities 1; gl_texturemode GL_LINEAR_MIPMAP_LINEAR; spk deactivated"<br>
+          bind "key" "+Cvar_FpsBoost_Hold"
         </code>
       </div>
       <br>How to set up these aliases? - it's very simple.<br>
@@ -343,7 +343,7 @@
       <code>bind "e" "+use;wait;-use"</code> - makes it easier to use map buttons (useful for speedrunners)<br>
       <code>bind "key" "deagle;secammo"</code> - buy deagle and ammo<br>
       <code>bind "key" "hegren;flash;sgren;flash"</code> - buy all grenades<br><br>
-      Alias for changing hand position (hold)
+      Alias for changing hand position (toggle)
       <div class="allocation">
         <code style="font-size: 0.8em">
           alias "Hand" "Right"<br>
@@ -352,7 +352,7 @@
           bind "key" "Hand"
         </code>
       </div>
-      <br>Alias for enabling microphone, you can simply press the button once (hold) and the microphone will be always active
+      <br>Alias for enabling microphone, you can simply press the button once (toggle) and the microphone will be always active
       <div class="allocation">
         <code style="font-size: 0.8em">
           alias "Voice" "On"<br>
