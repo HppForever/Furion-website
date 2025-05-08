@@ -317,21 +317,21 @@
           <source src="../../Res/Img or video/Articles/What are binds and aliases, how to create them, and a couple of useful examples/Fps bind.mp4" type="video/mp4">
         </video>
         У нас теперь есть возможность динамически включать и выключать фпс буст в игре через наши два бинда, но намного удобнее было бы использовать только одну кнопку, чем две.<br><br>
-        Мы можем сделать это с помощью алиаса, вот пример, который заменит наши два бинда на одну кнопку, переключение фпс буста будет осуществляться через нажатие (hold)<br>
+        Мы можем сделать это с помощью алиаса, вот пример, который заменит наши два бинда на одну кнопку, переключение фпс буста будет осуществляться через нажатие (toggle)<br>
         <div class="allocation">
           <code style="font-size: 0.8em">
-              alias Cvar_FpsBoost_Hold "BoostOn"<br>
-              alias BoostOn "hud_draw 0; cl_weather 0; cl_himodels 0; r_detailtextures 0; r_drawentities 0; gl_texturemode GL_NEAREST_MIPMAP_NEAREST; spk activated; alias Cvar_FpsBoost_Hold BoostOff"<br>
-              alias BoostOff "hud_draw 1; cl_weather 1; cl_himodels 1; r_detailtextures 1; r_drawentities 1; gl_texturemode GL_LINEAR_MIPMAP_LINEAR; spk deactivated; alias Cvar_FpsBoost_Hold BoostOn"<br>
-              bind "key" "Cvar_FpsBoost_Hold"
+              alias Cvar_FpsBoost_Toggle "BoostOn"<br>
+              alias BoostOn "hud_draw 0; cl_weather 0; cl_himodels 0; r_detailtextures 0; r_drawentities 0; gl_texturemode GL_NEAREST_MIPMAP_NEAREST; spk activated; alias Cvar_FpsBoost_Toggle BoostOff"<br>
+              alias BoostOff "hud_draw 1; cl_weather 1; cl_himodels 1; r_detailtextures 1; r_drawentities 1; gl_texturemode GL_LINEAR_MIPMAP_LINEAR; spk deactivated; alias Cvar_FpsBoost_Toggle BoostOn"<br>
+              bind "key" "Cvar_FpsBoost_Toggle"
           </code>
       </div>
-      <br>Вот такой же алиас, только работает через удержание кнопки (toggle)
+      <br>Вот такой же алиас, только работает через удержание кнопки (hold)
       <div class="allocation">
         <code style="font-size: 0.8em">
-          alias +Cvar_FpsBoost_Toggle "hud_draw 0; cl_weather 0; cl_himodels 0; r_detailtextures 0; r_drawentities 0; gl_texturemode GL_NEAREST_MIPMAP_NEAREST; spk activated"<br>
-          alias -Cvar_FpsBoost_Toggle "hud_draw 1; cl_weather 1; cl_himodels 1; r_detailtextures 1; r_drawentities 1; gl_texturemode GL_LINEAR_MIPMAP_LINEAR; spk deactivated"<br>
-          bind "key" "+Cvar_FpsBoost_Toggle"
+          alias +Cvar_FpsBoost_Hold "hud_draw 0; cl_weather 0; cl_himodels 0; r_detailtextures 0; r_drawentities 0; gl_texturemode GL_NEAREST_MIPMAP_NEAREST; spk activated"<br>
+          alias -Cvar_FpsBoost_Hold "hud_draw 1; cl_weather 1; cl_himodels 1; r_detailtextures 1; r_drawentities 1; gl_texturemode GL_LINEAR_MIPMAP_LINEAR; spk deactivated"<br>
+          bind "key" "+Cvar_FpsBoost_Hold"
         </code>
       </div>
       <br>Как установить эти алиасы? - все очень просто.<br>
@@ -344,7 +344,7 @@
       <code>bind "e" "+use;wait;-use"</code> - становиться проще использовать кнопки карты (полезно для спидранеров)<br>
       <code>bind "key" "deagle;secammo"</code> - покупка дигла и патронов<br>
       <code>bind "key" "hegren;flash;sgren;flash"</code> - покупка всех гранат<br><br>
-      Алиас на смену положение рук (hold)
+      Алиас на смену положение рук (toggle)
       <div class="allocation">
         <code style="font-size: 0.8em">
           alias "Hand" "Right"<br>
@@ -353,7 +353,7 @@
           bind "key" "Hand"
         </code>
       </div>
-      <br>Алиас включение микрофона, можно просто нажать один раз кнопку (hold) и микрофон будет вечно активен
+      <br>Алиас включение микрофона, можно просто нажать один раз кнопку (toggle) и микрофон будет вечно активен
       <div class="allocation">
         <code style="font-size: 0.8em">
           alias "Voice" "On"<br>
