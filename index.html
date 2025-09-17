@@ -1,177 +1,289 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-<link href="CSS/styles.css" rel="stylesheet">
-<link rel="icon" href="Res/Img or video/Favicon.jpg" type="image/x-icon">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@500&display=swap" rel="stylesheet">
-<title>[Furion] главная</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="CSS/styles.css" rel="stylesheet" />
+  <link rel="icon" href="Res/Img or video/Favicon.jpg" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@500&display=swap" rel="stylesheet" />
+  <title>[Furion] главная</title>
+  <style>
+    .container_black {
+      border-radius: 16px;
+      margin-bottom: 0.8rem;
+      min-height: 220px;
+    }
+    h3, h4, h5 {
+      font-weight: 700;
+    }
+    p, li {
+      margin-bottom: 0.2em;
+    }
+    .nav-link.pulse:hover, .nav-link.active {
+      text-shadow: none !important;
+    }
+    .carousel .carousel-item img {
+      object-fit: contain;
+      height: 450px;
+      width: 100%;
+      border-radius: 10px;
+    }
+    .carousel-item {
+      text-align: center;
+    }
+    .container.mt-4 {
+      margin-top: 1rem !important;
+    }
+    .container.mt-5 {
+      margin-top: 1.5rem !important;
+    }
+    .row.mt-4 {
+      margin-top: 1rem !important;
+    }
+    .row.mt-5 {
+      margin-top: 1.5rem !important;
+    }
+    .container_black.p-4 {
+      padding: 1.5rem !important;
+    }
+    ul.no-bullets {
+    list-style: none;
+    margin-left: 1.2em;
+    padding-left: 0;
+    }
+    
+    @media (max-width: 991px) {
+      .container_black {
+        min-height: unset;
+        padding: 1em 0.7em;
+      }
+      .container_black.p-4 {
+        padding: 1rem !important;
+      }
+    }
+    @media (max-width: 767px) {
+      h3, h4, h5 {
+        font-size: 1.1em !important;
+      }
+      .container.mt-4, .container.mt-5 {
+        margin-top: 0.8rem !important;
+      }
+      .row.mt-4, .row.mt-5 {
+        margin-top: 0.8rem !important;
+      }
+    }
+  </style>
 </head>
-<body><div class="grain"></div>
+<body>
   <div class="grain"></div>
-    <header class="text-center" style="display: flex; justify-content: center; align-items: flex-start;">
-        <img id="main-logo" style="height: 3.125em; margin-bottom: 0.625em; display: none;" src="Res/Img or video/Logotype.png" alt="Logotype">
-        <div style="position: absolute; top: 0em; right: 0em; display: flex; align-items: center;">
-          <a class="nav-link ru" href="#">🇷🇺</a>
-          <a class="nav-link en" href="HTML/EN/index.html">🇺🇸</a>
-      </div>      
-    </header>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
-    <div class="container-fluid"> 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> 
-    <span class="navbar-toggler-icon"></span> 
-    </button> 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
-    <ul class="navbar-nav me-auto mb-2 mb-lg-0"> 
-    <li class="nav-item"> 
-    <a class="nav-link pulse active" href="index.html">⭐ Главная</a> 
-    </li> 
-    <li class="nav-item"> 
-    <a class="nav-link pulse" href="HTML/RU/download.html">🔗 Скачать</a> 
-    </li> 
-    <li class="nav-item"> 
-        <a class="nav-link pulse" href="HTML/RU/updates.html">🟢 Обновления</a> 
-    </li> 
-    <li class="nav-item">
-        <a class="nav-link pulse" href="HTML/RU/cheat video from youtubers.html">🎬 Видео с читом от ютуберов</a> 
-    </li>
-    <li class="nav-item"> 
-      <a class="nav-link pulse" href="HTML/RU/answers to common questions.html">💡 Ответы на частые вопросы</a> 
-    </li>
-    <li class="nav-item"> 
-      <a class="nav-link pulse" href="HTML/RU/articles.html">📜 Статьи</a> 
-    </li>
-    <li class="nav-item"> 
-        <a class="nav-link pulse" href="https://guns.lol/hpp_forever" target="_blank">✉️ Контакты</a> 
-    </li>
-    </ul> 
-    </div> 
-    </div> 
-</nav>
-<div class="container mt-4">
-   <div class="row">
-     <div class="col-md-12 text-center">
-       <h2>Добро пожаловать на чит сайт по CS 1.6</h2><br>
-       <img width="75%" height="75%" src="Res/Img or video/Preview new.jpg"></img><br><br>
-       <h2>📋 Описание</h2>
-       <div class="container_black mt-4 d-flex justify-content-center">
-        <p>Наш проект посвящен предоставлению чита для игры CS 1.6.<br>
-          Первый релиз нашего чита состоялся 31.05.2023.<br>
-           Наш чит имеет локализацию на два основных языка (русский и английский) и обладает множеством функций.<br> 
-           В будущем мы планируем еще больше улучшить функционал нашего чита!
-          </p>
+  <header class="text-center d-flex justify-content-center align-items-start position-relative" style="min-height: 2.5em;"> <!-- Уменьшена высота header -->
+    <img id="main-logo" style="height: 3.125em; margin-bottom: 0.625em; display: none;" src="Res/Img or video/Logotype.png" alt="Logotype" />
+    <div style="position: absolute; top: 0; right: 0; display: flex; gap: 0.4em; align-items: center;">
+      <a class="nav-link ru" href="#">🇷🇺</a>
+      <a class="nav-link en" href="HTML/EN/index.html">🇺🇸</a>
+    </div>
+  </header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link pulse active" href="index.html">⭐ Главная</a></li>
+          <li class="nav-item"><a class="nav-link pulse" href="HTML/RU/download.html">🔗 Скачать</a></li>
+          <li class="nav-item"><a class="nav-link pulse" href="HTML/RU/updates.html">🟢 Обновления</a></li>
+          <li class="nav-item"><a class="nav-link pulse" href="HTML/RU/cheat video from youtubers.html">🎬 Видео с читом от ютуберов</a></li>
+          <li class="nav-item"><a class="nav-link pulse" href="HTML/RU/answers to common questions.html">💡 Ответы на частые вопросы</a></li>
+          <li class="nav-item"><a class="nav-link pulse" href="HTML/RU/articles.html">📜 Статьи</a></li>
+          <li class="nav-item"><a class="nav-link pulse" href="https://guns.lol/hpp_forever" target="_blank">✉️ Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-12 text-center">
+        <img width="75%" height="75%" src="Res/Img or video/Preview new.jpg" style="max-width: 100%; height: auto;" />
+        <br />
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row g-3">
+      <div class="col-lg-6">
+        <div class="container_black p-4 h-100 d-flex flex-column justify-content-center">
+          <h3 class="text-center mb-3">📋 Описание проекта</h3>
+          <div>
+            <p>Проект посвящен предоставлению чита для игры CS 1.6.</p>
+            <p>🗓️ <strong>Первый релиз:</strong> 31.05.2023</p>
+            <p>🌍 <strong>Локализация:</strong> русский и английский языки</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="container_black p-4 h-100 d-flex flex-column justify-content-center">
+          <h3 class="text-center mb-3">👨🏼‍💻 Основные функции</h3>
+          <div class="row">
+            <div class="col-6">
+              <ul class="no-bullets">
+              <li>🎯 Aimbot</li>
+              <li>🎯 Triggerbot</li>
+              <li>👁️ Visuals (ESP, Chams)</li>
+              <li>🎨 Texture Changer</li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <ul class="no-bullets">
+                <li>🐇 Movement (Top 1)</li>
+                <li>🔄 SteamID Spoofer</li>
+                <li>🗡️ Knifebot</li>
+                <li>📩 Chat/CMD Spammers</li>
+              </ul>
+            </div>
+          </div>
+          <p class="text-center mt-2 mb-0"><strong>И многое другое!</strong></p>
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-12 text-center">
-        <br><br><br><br><br><br><br>
-        <h2>👨🏼‍💻 Функции</h2>
-        <div class="container_black mt-4 d-flex justify-content-center">
-         <p>
-          🎯 Aimbot<br>
-          🎯 Triggerbot<br>
-          👁️ Visuals (esp, chams, texture changer, sky changer, etc)<br>
-          🐇 Movement (top 1)<br>
-          🔄 SteamID spoofer<br>
-          🗡️ Knifebot<br>
-          📩 Chat/cmd spammers<br>
-          And more!
-           </p>
-       </div>
-     </div>
-    </div>
-<div class="row">
-   <div class="col-md-12 text-center">
-    <br>
-     <h2>🗺️ Карта сайта</h2>
-     <div class="container_black mt-4 d-flex justify-content-center">
-       <ul><a href="HTML/RU/download.html">🔗 Скачать</a> - на этой странице вы можете скачать различные файлы и паки<br>
-          <a href="HTML/RU/updates.html">🟢 Обновления</a> - на этой странице вы можете просмотреть обновления чита или сайта<br>
-           <a href="HTML/RU/cheat video from youtubers.html">🎬 Видео с читом от ютуберов</a> - на этой странице вы можете просматривать видеоролики с использованием нашего чита<br>
-            <a href="HTML/RU/articles.html">📜 Статьи</a> - на этой странице вы можете прочитать интересные статьи о CS 1.6 и чит функциях<br>
-             <a href="https://guns.lol/hpp_forever" target="_blank">✉️ Контакты</a> - на этой странице вы можете узнать контакты нашего проекта
-             </ul>
-             </div>
-             </div> 
+    <div class="row mt-5">
+      <div class="col-12">
+        <div class="container_black p-4">
+          <h3 class="text-center mb-3">🗺️ Навигация по сайту</h3>
+          <div class="row g-2">
+            <div class="col-md-6">
+              <div class="d-flex align-items-start mb-2">
+                <span class="me-3">🔗</span>
+                <div>
+                  <strong><a href="HTML/RU/download.html" class="text-decoration-none">Скачать</a></strong>
+                  <p class="mb-0 small">Загрузите различные файлы и паки для чита</p>
+                </div>
+              </div>
+              <div class="d-flex align-items-start mb-2">
+                <span class="me-3">🟢</span>
+                <div>
+                  <strong><a href="HTML/RU/updates.html" class="text-decoration-none">Обновления</a></strong>
+                  <p class="mb-0 small">Актуальная информация о новых версиях</p>
+                </div>
+              </div>
+              <div class="d-flex align-items-start">
+                <span class="me-3">🎬</span>
+                <div>
+                  <strong><a href="HTML/RU/cheat video from youtubers.html" class="text-decoration-none">Видео от ютуберов</a></strong>
+                  <p class="mb-0 small">Обзоры и демонстрации чита</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex align-items-start mb-2">
+                <span class="me-3">📜</span>
+                <div>
+                  <strong><a href="HTML/RU/articles.html" class="text-decoration-none">Статьи</a></strong>
+                  <p class="mb-0 small">Полезные материалы о CS 1.6 и чите</p>
+                </div>
+              </div>
+              <div class="d-flex align-items-start mb-2">
+                <span class="me-3">💡</span>
+                <div>
+                  <strong><a href="HTML/RU/answers to common questions.html" class="text-decoration-none">Частые вопросы</a></strong>
+                  <p class="mb-0 small">Ответы на популярные вопросы пользователей</p>
+                </div>
+              </div>
+              <div class="d-flex align-items-start">
+                <span class="me-3">✉️</span>
+                <div>
+                  <strong><a href="https://guns.lol/hpp_forever" target="_blank" class="text-decoration-none">Контакты</a></strong>
+                  <p class="mb-0 small">Свяжитесь с разработчиком</p>
+                </div>
+              </div>
             </div>
           </div>
-          <br>
-           <div id="Carousel" class="carousel slide d-flex justify-content-center" data-bs-ride="carousel" data-bs-interval="9999999999" style="margin-top: 0.313em; margin-right: auto; margin-left: auto;">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#Carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#Carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#Carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      <button type="button" data-bs-target="#Carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-      <button type="button" data-bs-target="#Carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
-      <button type="button" data-bs-target="#Carousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
-      <button type="button" data-bs-target="#Carousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
-      <button type="button" data-bs-target="#Carousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
-      <button type="button" data-bs-target="#Carousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
-      <button type="button" data-bs-target="#Carousel" data-bs-slide-to="9" aria-label="Slide 10"></button>
-      <button type="button" data-bs-target="#Carousel" data-bs-slide-to="10" aria-label="Slide 11"></button>
-      <button type="button" data-bs-target="#Carousel" data-bs-slide-to="11" aria-label="Slide 12"></button>
-      <button type="button" data-bs-target="#Carousel" data-bs-slide-to="12" aria-label="Slide 13"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="Res/Img or video//Cheat screenshots/1.jpg" class="d-block w-100" alt="Cheat screenshot 1">
-      </div>
-      <div class="carousel-item">
-        <img src="Res/Img or video//Cheat screenshots/2.jpg" class="d-block w-100" alt="Cheat screenshot 2">
-      </div>
-      <div class="carousel-item">
-        <img src="Res/Img or video//Cheat screenshots/3.jpg" class="d-block w-100" alt="Cheat screenshot 3">
-      </div>
-      <div class="carousel-item">
-        <img src="Res/Img or video//Cheat screenshots/4.jpg" class="d-block w-100" alt="Cheat screenshot 4">
-      </div>
-      <div class="carousel-item">
-        <img src="Res/Img or video//Cheat screenshots/5.jpg" class="d-block w-100" alt="Cheat screenshot 5">
-      </div>
-      <div class="carousel-item">
-        <img src="Res/Img or video//Cheat screenshots/6.jpg" class="d-block w-100" alt="Cheat screenshot 6">
-      </div>
-      <div class="carousel-item">
-        <img src="Res/Img or video//Cheat screenshots/7.png" class="d-block w-100" alt="Cheat screenshot 7">
-      </div>
-      <div class="carousel-item">
-        <img src="Res/Img or video//Cheat screenshots/8.png" class="d-block w-100" alt="Cheat screenshot 8">
-      </div>
-      <div class="carousel-item">
-        <img src="Res/Img or video//Cheat screenshots/9.png" class="d-block w-100" alt="Cheat screenshot 9">
-      </div>
-      <div class="carousel-item">
-        <img src="Res/Img or video//Cheat screenshots/10.png" class="d-block w-100" alt="Cheat screenshot 10">
-      </div>
-      <div class="carousel-item">
-        <img src="Res/Img or video//Cheat screenshots/11.png" class="d-block w-100" alt="Cheat screenshot 11">
-      </div>
-      <div class="carousel-item">
-        <img src="Res/Img or video/s/Cheat screenshots/12.png" class="d-block w-100" alt="Cheat screenshot 12">
-      </div>
-      <div class="carousel-item">
-        <img src="Res/Img or video//Cheat screenshots/13.png" class="d-block w-100" alt="Cheat screenshot 13">
+        </div>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#Carousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Предыдущий</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#Carousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Следующий</span>
-    </button>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h3 class="mb-3">📸 Скриншоты чита</h3>
+      </div>
+    </div>
+    <div id="Carousel" class="carousel slide d-flex justify-content-center" data-bs-ride="carousel" data-bs-interval="9999999999" style="margin-top: 0.2em; margin-right: auto; margin-left: auto; max-width: 800px;"> <!-- Уменьшен margin-top -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#Carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#Carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#Carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#Carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#Carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#Carousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        <button type="button" data-bs-target="#Carousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+        <button type="button" data-bs-target="#Carousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+        <button type="button" data-bs-target="#Carousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
+        <button type="button" data-bs-target="#Carousel" data-bs-slide-to="9" aria-label="Slide 10"></button>
+        <button type="button" data-bs-target="#Carousel" data-bs-slide-to="10" aria-label="Slide 11"></button>
+        <button type="button" data-bs-target="#Carousel" data-bs-slide-to="11" aria-label="Slide 12"></button>
+        <button type="button" data-bs-target="#Carousel" data-bs-slide-to="12" aria-label="Slide 13"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="Res/Img or video/Cheat screenshots/1.jpg" class="d-block w-100" alt="Cheat screenshot 1" />
+        </div>
+        <div class="carousel-item">
+          <img src="Res/Img or video/Cheat screenshots/2.jpg" class="d-block w-100" alt="Cheat screenshot 2" />
+        </div>
+        <div class="carousel-item">
+          <img src="Res/Img or video/Cheat screenshots/3.jpg" class="d-block w-100" alt="Cheat screenshot 3" />
+        </div>
+        <div class="carousel-item">
+          <img src="Res/Img or video/Cheat screenshots/4.jpg" class="d-block w-100" alt="Cheat screenshot 4" />
+        </div>
+        <div class="carousel-item">
+          <img src="Res/Img or video/Cheat screenshots/5.jpg" class="d-block w-100" alt="Cheat screenshot 5" />
+        </div>
+        <div class="carousel-item">
+          <img src="Res/Img or video/Cheat screenshots/6.jpg" class="d-block w-100" alt="Cheat screenshot 6" />
+        </div>
+        <div class="carousel-item">
+          <img src="Res/Img or video/Cheat screenshots/7.png" class="d-block w-100" alt="Cheat screenshot 7" />
+        </div>
+        <div class="carousel-item">
+          <img src="Res/Img or video/Cheat screenshots/8.png" class="d-block w-100" alt="Cheat screenshot 8" />
+        </div>
+        <div class="carousel-item">
+          <img src="Res/Img or video/Cheat screenshots/9.png" class="d-block w-100" alt="Cheat screenshot 9" />
+        </div>
+        <div class="carousel-item">
+          <img src="Res/Img or video/Cheat screenshots/10.png" class="d-block w-100" alt="Cheat screenshot 10" />
+        </div>
+        <div class="carousel-item">
+          <img src="Res/Img or video/Cheat screenshots/11.png" class="d-block w-100" alt="Cheat screenshot 11" />
+        </div>
+        <div class="carousel-item">
+          <img src="Res/Img or video/Cheat screenshots/12.png" class="d-block w-100" alt="Cheat screenshot 12" />
+        </div>
+        <div class="carousel-item">
+          <img src="Res/Img or video/Cheat screenshots/13.png" class="d-block w-100" alt="Cheat screenshot 13" />
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#Carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Предыдущий</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#Carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Следующий</span>
+      </button>
+    </div>
   </div>
   <div id="sparkles"></div>
+  <br />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="JS/do not load current page.js"></script>
+  <script src="JS/cursor effect.js"></script>
+  <script src="JS/logo appearance.js"></script>
+  <script src="JS/RU/mini game.js"></script>
 </body>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="JS/do not load current page.js"></script>
-<script src="JS/cursor effect.js"></script>
-<script src="JS/logo appearance.js"></script>
-<script src="JS/RU/mini game.js"></script>
 </html>
